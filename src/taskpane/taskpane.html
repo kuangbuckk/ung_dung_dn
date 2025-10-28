@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <title>Tìm kiếm NLP với Gemini</title>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="taskpane.css" /> <script type="text/javascript" src="https://appsforoffice.microsoft.com/lib/1/hosted/office.js"></script>
+</head>
+<body>
+    <main id="app-body" style="padding: 15px;">
+        <section id="sideload-msg">
+            <h2>🔍 Tìm kiếm Ngôn ngữ Tự nhiên</h2>
+            <p>Nhập yêu cầu tìm kiếm (ví dụ: "tìm tất cả đề xuất về ngân sách năm 2025")</p>
+            
+            <textarea id="natural-query" rows="4" style="width: 100%;"></textarea>
+            <br><br>
+            
+            <button id="search-button">Tìm kiếm (Sử dụng Gemini)</button>
+            
+            <div id="status" style="margin-top: 15px; font-weight: bold; color: #0078D4;">Đã sẵn sàng.</div>
+            
+            <h3>Kết quả Tìm kiếm:</h3>
+            
+            <ul id="results-list" style="list-style-type: none; padding: 0;"></ul>
+        </section>
+    </main>
+
+    <script type="text/javascript" src="taskpane.js"></script>
+</body>
+</html>

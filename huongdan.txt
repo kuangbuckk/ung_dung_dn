@@ -1,0 +1,2 @@
+chay server trong dir server: npm server.js
+chay tools word: npm run dev-server hoac npm start

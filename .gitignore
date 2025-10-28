@@ -1,0 +1,3 @@
+# Ignore Node.js dependencies and VS Code workspace settings
+node_modules/
+.vscode/
