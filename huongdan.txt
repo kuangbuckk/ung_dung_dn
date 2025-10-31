@@ -1,2 +1,3 @@
-Bước 1: ở đường dẫn ban đầu: chạy npm start hoặc npm run dev-server
-Bước 2: cd vào đường dẫn /server rồi chạy node server.js
+Bước 1: npm install cả ở đường dẫn ban đầu và trong đường dẫn /server
+Bước 2: ở đường dẫn ban đầu: chạy npm start hoặc npm run dev-server
+Bước 3: cd vào đường dẫn /server rồi chạy node server.js
