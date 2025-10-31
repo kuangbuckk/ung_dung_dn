@@ -1,6 +1,22 @@
 // Thay đổi nếu backend của bạn chạy trên cổng hoặc host khác
 const BACKEND_URL = "http://localhost:3001/api/process-search"; 
 
+// Hàm quản lý trạng thái tải (sử dụng các tham số DOM)
+function setSearching(isSearching, button, spinner, statusDiv) {
+    if (isSearching) {
+        button.disabled = true;
+        statusDiv.textContent = 'Đang phân tích yêu cầu bằng Gemini...';
+        button.textContent = 'Đang phân tích...';
+        // Hiển thị spinner nếu tồn tại
+        if (spinner) spinner.classList.remove('d-none'); 
+    } else {
+        button.disabled = false;
+        button.textContent = 'Tìm kiếm bằng Gemini';
+        // Ẩn spinner nếu tồn tại
+        if (spinner) spinner.classList.add('d-none');
+    }
+}
+
 // Khởi tạo Add-in khi Word sẵn sàng
 Office.onReady(info => {
     if (info.host === Office.HostType.Word) {
@@ -25,53 +41,17 @@ Office.onReady(info => {
     }
 });
 
-// Thêm hàm này vào taskpane.js, sau hàm runSearch và scrollToRange
-async function summarizeText(textToSummarize) {
-    const SUMMARY_URL = "http://localhost:3001/api/summarize"; // Cần tạo endpoint mới
-    
-    try {
-        const response = await fetch(SUMMARY_URL, {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ text: textToSummarize })
-        });
-        const result = await response.json();
-        
-        if (result.error) throw new Error(result.error);
-        return result.summary;
-    } catch (error) {
-        console.error("Lỗi tóm tắt Gemini:", error);
-        return "Không thể tóm tắt đoạn này.";
-    }
-}
-
-// Hàm quản lý trạng thái tải (giữ nguyên)
-function setSearching(isSearching, button, spinner, statusDiv) {
-    if (isSearching) {
-        button.disabled = true;
-        statusDiv.textContent = 'Đang phân tích yêu cầu bằng Gemini...';
-        button.textContent = 'Đang phân tích...';
-        if (spinner) spinner.classList.remove('d-none'); 
-    } else {
-        button.disabled = false;
-        button.textContent = 'Tìm kiếm bằng Gemini';
-        if (spinner) spinner.classList.add('d-none');
-    }
-}
-
-// HÀM CHÍNH ĐÃ ĐƯỢC CẬP NHẬT ĐỂ TÌM KIẾM, ĐÁNH DẤU, VÀ TÓM TẮT
+// Hàm chính xử lý logic tìm kiếm (nhận các tham số DOM)
 async function runSearch(naturalQuery, searchButton, statusDiv, resultsList, loadingSpinner) {
-    // Đảm bảo BACKEND_URL được định nghĩa ở đầu file taskpane.js
-    const BACKEND_URL = "http://localhost:3001/api/process-search"; 
-    
     setSearching(true, searchButton, loadingSpinner, statusDiv);
     resultsList.innerHTML = "";
     const queryValue = naturalQuery.value;
 
     await Word.run(async (context) => {
+
         let searchPlan;
         try {
-            // Bước 1: Gọi Backend API để lấy keywords và phrases
+            // Gọi Backend API (Gemini)
             const response = await fetch(BACKEND_URL, {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
@@ -81,10 +61,9 @@ async function runSearch(naturalQuery, searchButton, statusDiv, resultsList, loa
 
             if (searchPlan.error) throw new Error(searchPlan.error);
             
-            const searchTerms = [...searchPlan.keywords, ...(searchPlan.relevant_phrases || [])];
-            statusDiv.textContent = `Gemini đã trích xuất ${searchTerms.length} cụm từ. Đang tìm kiếm...`;
+            statusDiv.textContent = `Gemini đã trích xuất: ${searchPlan.keywords.join(", ")}. Đang tìm kiếm...`;
 
-            // Bước 2: Thực hiện tìm kiếm trong Word
+            // Thực hiện tìm kiếm trong Word
             const body = context.document.body;
             const searchOptions = {
                 ignorePunct: true,
@@ -93,76 +72,46 @@ async function runSearch(naturalQuery, searchButton, statusDiv, resultsList, loa
             };
 
             let totalResults = 0;
-            const uniqueResults = new Set(); // Dùng để tránh trùng lặp nội dung
-
-            for (const keyword of searchTerms) {
-                if (!keyword || keyword.trim() === '') continue;
-
+            
+            for (const keyword of searchPlan.keywords) {
                 const searchResults = body.search(keyword, searchOptions);
                 context.load(searchResults, 'items');
                 await context.sync();
 
                 if (searchResults.items.length > 0) {
+                    totalResults += searchResults.items.length;
                     
-                    // Lấy kết quả khớp đầu tiên cho từ khóa này
-                    const firstMatch = searchResults.items[0]; 
-                    
-                    // Lấy toàn bộ đoạn văn bản chứa kết quả đầu tiên
-                    const parentParagraph = firstMatch.getRange("Whole").parentParagraph;
-                    
-                    // Tải các thuộc tính: Text và Vị trí (Page)
-                    context.load(parentParagraph, 'text'); 
-                    context.load(firstMatch, 'page'); 
-                    context.load(firstMatch, 'text'); // Tải text của range để đánh dấu
-                    
-                    await context.sync(); // ĐỒNG BỘ để lấy giá trị đã tải
+                    // 1. Tải thuộc tính 'text' cho TẤT CẢ các đối tượng Range
+                    searchResults.items.forEach((range) => {
+                        range.font.highlightColor = '#FFFF00'; // Đánh dấu màu vàng
+                        context.load(range, 'text'); // Tải thuộc tính text
+                    });
 
-                    const fullParagraphText = parentParagraph.text.trim();
-                    const resultKey = fullParagraphText.substring(0, 100); // Dùng 100 ký tự đầu để so sánh
-
-                    if (!uniqueResults.has(resultKey)) {
-                        uniqueResults.add(resultKey);
-                        totalResults++;
-                        
-                        // Đánh dấu màu vàng
-                        firstMatch.font.highlightColor = '#FFFF00'; 
-                        
-                        // Bước 3: Gọi Gemini để TÓM TẮT đoạn văn bản
-                        statusDiv.textContent = `Đang tóm tắt đoạn văn chứa "${keyword}"...`;
-                        const summary = await summarizeText(fullParagraphText);
-                        
-                        // Lấy thông tin vị trí (số trang)
-                        let locationInfo = '';
-                        try {
-                            const pageNumber = firstMatch.page; 
-                            if (pageNumber && pageNumber !== 0) {
-                                locationInfo = ` | Trang ${pageNumber}`;
-                            }
-                        } catch (e) {
-                            // Bỏ qua lỗi Page API
-                        }
+                    await context.sync(); // ĐỒNG BỘ để lấy giá trị text đã tải
+                    
+                    // 2. Bây giờ, xử lý từng kết quả (thuộc tính text đã sẵn sàng)
+                    searchResults.items.forEach((range) => {
+                        // Lấy giá trị văn bản TRỰC TIẾP từ thuộc tính đã được tải
+                        const textContent = range.text; 
                         
                         // Tạo phần tử list item
                         const li = document.createElement('li');
                         li.className = 'search-result-item'; 
                         
-                        // HIỂN THỊ TÓM TẮT
-                        li.innerHTML = `
-                            <strong>[${keyword}] - Tóm tắt:</strong> ${summary}
-                            <br><small style="color:#777;">(${locationInfo})</small>
-                        `;
+                        // Sử dụng textContent
+                        li.textContent = `[${keyword}] - "${textContent.substring(0, 50).trim()}..."`;
                         
-                        // Sự kiện click cuộn đến vị trí
-                        li.onclick = () => scrollToRange(firstMatch);
+                        // Sự kiện click vẫn cần tham chiếu đến đối tượng range API
+                        li.onclick = () => scrollToRange(range);
                         resultsList.appendChild(li);
-                    }
+                    });
                 }
             }
             
-            statusDiv.textContent = `Hoàn tất tìm kiếm. Tìm thấy ${totalResults} kết quả duy nhất.`;
+            statusDiv.textContent = `Hoàn tất tìm kiếm. Tìm thấy ${totalResults} kết quả.`;
 
         } catch (error) {
-            statusDiv.textContent = `LỖI TÌM KIẾM: ${error.message}. Vui lòng kiểm tra server Node.js hoặc thử lại.`;
+            statusDiv.textContent = `LỖI TÌM KIẾM: ${error.message}.`;
             console.error("Lỗi: ", error);
         }
         
@@ -170,6 +119,7 @@ async function runSearch(naturalQuery, searchButton, statusDiv, resultsList, loa
         statusDiv.textContent = `LỖI WORD API: ${error.message}`;
         console.error("Lỗi Word API: " + error.message);
     }).finally(() => {
+        // Luôn tắt trạng thái tìm kiếm
         setSearching(false, searchButton, loadingSpinner, statusDiv);
     });
 }
