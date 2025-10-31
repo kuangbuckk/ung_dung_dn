@@ -1,2 +1,2 @@
-chay server trong dir server: npm server.js
-chay tools word: npm run dev-server hoac npm start
+Bước 1: ở đường dẫn ban đầu: chạy npm start hoặc npm run dev-server
+Bước 2: cd vào đường dẫn /server rồi chạy node server.js
