@@ -3,30 +3,59 @@
 <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
-    <title>Tìm kiếm NLP với Gemini</title>
+    <title>Gemini Word Helper</title>
     
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="taskpane.css" /> <script type="text/javascript" src="https://appsforoffice.microsoft.com/lib/1/hosted/office.js"></script>
+    <script src="https://appsforoffice.microsoft.com/lib/1/hosted/office.js" type="text/javascript"></script>
+
+    <link rel="stylesheet" href="taskpane.css"> 
+    
 </head>
 <body>
-    <main id="app-body" style="padding: 15px;">
-        <section id="sideload-msg">
-            <h2>🔍 Tìm kiếm Ngôn ngữ Tự nhiên</h2>
-            <p>Nhập yêu cầu tìm kiếm (ví dụ: "tìm tất cả đề xuất về ngân sách năm 2025")</p>
-            
-            <textarea id="natural-query" rows="4" style="width: 100%;"></textarea>
-            <br><br>
-            
-            <button id="search-button">Tìm kiếm (Sử dụng Gemini)</button>
-            
-            <div id="status" style="margin-top: 15px; font-weight: bold; color: #0078D4;">Đã sẵn sàng.</div>
-            
-            <h3>Kết quả Tìm kiếm:</h3>
-            
-            <ul id="results-list" style="list-style-type: none; padding: 0;"></ul>
-        </section>
-    </main>
+    <div class="ms-font-m">
+        
+        <p id="status" style="font-weight: bold;">Đang khởi tạo...</p>
+        <p id="loading-spinner" class="d-none" style="color: #0078d4;">Đang tải Gemini...</p>
+        
+        <hr>
+        
+        <h3>🔍 Tìm kiếm Nâng cao (NLP)</h3>
+        <p>Phân tích ngôn ngữ tự nhiên thành từ khóa tìm kiếm.</p>
+        <input type="text" id="natural-query" placeholder="Tìm kiếm tự nhiên (vd: Tìm các điều khoản quan trọng)" style="width: 100%;">
+        <button id="search-button">Tìm kiếm bằng Gemini</button>
+        
+        <h4>Kết quả tìm kiếm trong tài liệu</h4>
+        <ul id="results-list">
+            <li style="color: #605e5c;">(Kết quả sẽ hiển thị sau khi tìm kiếm)</li>
+        </ul>
+        
+        <hr>
 
-    <script type="text/javascript" src="taskpane.js"></script>
+        <h3>📝 Tóm tắt Văn bản</h3>
+        <p>Chọn đoạn văn bản cần tóm tắt, sau đó nhấn nút.</p>
+        <button id="summarize-button">Tóm tắt Văn bản Đã Chọn</button>
+        
+        <hr>
+
+        <h3>❓ Hỏi & Đáp Theo Ngữ Cảnh</h3>
+        <p>Chọn ngữ cảnh (đoạn văn) trong Word, sau đó nhập câu hỏi.</p>
+        <input type="text" id="qna-input" placeholder="Nhập câu hỏi của bạn (ví dụ: Ai là người chịu trách nhiệm?)" style="width: 100%;">
+        <button id="qna-button">Trả lời Câu hỏi</button>
+        
+        <hr>
+
+        <h3>💡 Giải thích Thuật ngữ</h3>
+        <p>Chọn một từ/cụm từ (thuật ngữ), sau đó nhấn nút để giải thích và nghiên cứu thêm.</p>
+        <button id="explain-button">Giải thích Thuật ngữ (Kèm Nghiên Cứu)</button>
+
+        <hr>
+        
+        <h3>✨ Kết quả AI</h3>
+        <div id="results-content">
+            <p style="color: #605e5c;">(Kết quả từ Tóm tắt, Q&A, Giải thích sẽ hiển thị ở đây)</p>
+        </div>
+
+    </div>
+    
+    <script src="taskpane.js" type="text/javascript"></script>
 </body>
 </html>
