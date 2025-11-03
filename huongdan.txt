@@ -1,3 +1,18 @@
 Bước 1: npm install cả ở đường dẫn ban đầu và trong đường dẫn /server
 Bước 2: ở đường dẫn ban đầu: chạy npm start hoặc npm run dev-server
 Bước 3: cd vào đường dẫn /server rồi chạy node server.js
+
+Cách hoạt động nhóm:
+Bước 1: anh em vào terminal
+Bước 2: 
+- git checkout main
+- git pull (lấy code mới nhất về)
+Bước 3:
+- git branch <tên_cách_tiếp_cận> (tạo nhánh mới để code ae ko bị trùng nhau)
+- git push origin -u <tên_cách_tiếp_cận> (đẩy nhánh của mình lên github để anh em cùng thấy được)
+- git checkout <tên_cách_tiếp_cận> (chuyển sang nhánh của mình để làm việc)
+Bước 4: Anh em cứ code xong thì tự push code lên nhánh của riêng mình nhé
+- git status (kiểm tra các thay đổi mới ae vừa làm)
+- git add .
+- git commit -m "abc"
+- git push

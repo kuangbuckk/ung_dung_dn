@@ -21,92 +21,7 @@ const searchTool = {
 // -----------------------------------------------------------
 
 // =======================================================
-// A. ENDPOINT CŨ: Xử lý yêu cầu tìm kiếm NLP
-// =======================================================
-app.post('/api/process-search', async (req, res) => {
-    const { naturalQuery } = req.body;
-
-    if (!naturalQuery) {
-        return res.status(400).json({ error: "Thiếu 'naturalQuery' trong body." });
-    }
-
-    const prompt = `
-        Bạn là một trình phân tích ngôn ngữ tự nhiên. 
-        Hãy chuyển đổi yêu cầu tìm kiếm bằng tiếng Việt sau thành một chuỗi JSON thuần túy (RAW JSON) mà tôi có thể dùng để tìm kiếm trong tài liệu Word. 
-        Trích xuất các từ khóa/cụm từ quan trọng nhất. Nếu người dùng muốn tìm kiếm chính xác, hãy đặt matchWholeWord là true.
-        
-        Yêu cầu tìm kiếm: "${naturalQuery}"
-
-        ĐỊNH DẠNG ĐẦU RA PHẢI LÀ JSON NGUYÊN BẢN:
-        {
-          "keywords": ["từ khóa 1", "cụm từ 2"],
-          "options": {
-            "matchWholeWord": true/false 
-          }
-        }
-    `;
-
-    try {
-        const response = await ai.models.generateContent({
-            model: 'gemini-2.5-flash', 
-            contents: [{ role: "user", parts: [{ text: prompt }] }],
-            config: {
-                temperature: 0.1, 
-                responseMimeType: "application/json" 
-            }
-        });
-
-        const jsonText = response.text.trim().replace(/```json|```/g, '');
-        const searchPlan = JSON.parse(jsonText);
-
-        res.json(searchPlan);
-    } catch (error) {
-        console.error("Lỗi khi gọi Gemini (NLP Search):", error);
-        res.status(500).json({ error: "Lỗi nội bộ, lỗi phân tích JSON, hoặc API Key không hợp lệ." });
-    }
-});
-
-
-// =======================================================
-// B. ENDPOINT MỚI 1: Tóm tắt Tài liệu (Document Summarization)
-// =======================================================
-app.post('/api/summarize', async (req, res) => {
-    const { documentText, summaryRequest } = req.body;
-
-    if (!documentText) {
-        return res.status(400).json({ error: "Thiếu 'documentText' để tóm tắt." });
-    }
-
-    const prompt = `
-        Tóm tắt đoạn văn bản sau dựa trên yêu cầu: "${summaryRequest || 'Tóm tắt các ý chính'}"
-        
-        Văn bản:
-        ---
-        ${documentText}
-        ---
-        
-        Hãy trả lời bằng tiếng Việt.
-    `;
-
-    try {
-        const response = await ai.models.generateContent({
-            model: 'gemini-2.5-flash', 
-            contents: [{ role: "user", parts: [{ text: prompt }] }],
-            config: {
-                temperature: 0.3,
-            }
-        });
-
-        res.json({ result: response.text });
-    } catch (error) {
-        console.error("Lỗi khi gọi Gemini (Summarize):", error);
-        res.status(500).json({ error: "Lỗi nội bộ khi gọi API Gemini." });
-    }
-});
-
-
-// =======================================================
-// C. ENDPOINT MỚI 2: Hỏi & Đáp Theo Ngữ Cảnh (Contextual Q&A)
+// A. ENDPOINT 1: Hỏi & Đáp Theo Ngữ Cảnh (Contextual Q&A)
 // =======================================================
 app.post('/api/qna', async (req, res) => {
     const { documentText, userQuestion } = req.body;
@@ -147,7 +62,7 @@ app.post('/api/qna', async (req, res) => {
 
 
 // =======================================================
-// D. ENDPOINT MỚI 3: Giải thích Thuật ngữ Kèm Theo Nghiên Cứu
+// B. ENDPOINT 2: Giải thích Thuật ngữ Kèm Theo Nghiên Cứu
 // =======================================================
 app.post('/api/explain', async (req, res) => {
     const { term } = req.body;
