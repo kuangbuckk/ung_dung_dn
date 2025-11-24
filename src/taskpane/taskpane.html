@@ -3,37 +3,45 @@
 <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
-    <title>Gemini Word Helper</title>
+    <title>Gemini Word Helper (File Search RAG)</title>
     
     <script src="https://appsforoffice.microsoft.com/lib/1/hosted/office.js" type="text/javascript"></script>
 
-    <link rel="stylesheet" href="taskpane.css"> 
-    
+    <link rel="stylesheet" href="taskpane.css">
 </head>
 <body>
-    <div class="ms-font-m">
+    <div class="container">
         
-        <p id="status" style="font-weight: bold;">Đang khởi tạo...</p>
-        <p id="loading-spinner" class="d-none" style="color: #0078d4;">Đang tải Gemini...</p>
+        <p id="status">Đang khởi tạo...</p>
+        
+        <div id="loading-spinner" class="d-none">
+            <div class="spinner"></div> Đang tải Gemini...
+        </div>
         
         <hr>
 
-        <h3>❓ Hỏi & Đáp Theo Ngữ Cảnh</h3>
-        <p>Chọn ngữ cảnh (đoạn văn) trong Word, sau đó nhập câu hỏi.</p>
-        <input type="text" id="qna-input" placeholder="Nhập câu hỏi của bạn (ví dụ: Ai là người chịu trách nhiệm?)" style="width: 100%;">
-        <button id="qna-button">Trả lời Câu hỏi</button>
+        <h3>💾 Upload File (Chuẩn bị RAG)</h3>
+        <p>Hệ thống tự động **Upload** toàn bộ tài liệu lên **Gemini File Store** khi mở Add-in. Nhấn nút này để upload lại nếu bạn chỉnh sửa nội dung.</p>
+        <button id="index-button">Upload Tài liệu Lên File Store</button>
+        
+        <hr>
+
+        <h3>❓ Global Q&A (Toàn Tài liệu)</h3>
+        <p>Đặt câu hỏi về nội dung toàn bộ tài liệu đã upload. Cần Upload thành công trước.</p>
+        <input type="text" id="qna-input" placeholder="Nhập câu hỏi của bạn..." style="width: 100%;" />
+        <button id="qna-button">Trả lời Câu hỏi (Toàn Tài liệu)</button>
         
         <hr>
 
         <h3>💡 Giải thích Thuật ngữ</h3>
-        <p>Chọn một từ/cụm từ (thuật ngữ), sau đó nhấn nút để giải thích và nghiên cứu thêm.</p>
+        <p>Chọn một từ/cụm từ (thuật ngữ) trong Word để giải thích và nghiên cứu thêm (sử dụng Google Search Tool).</p>
         <button id="explain-button">Giải thích Thuật ngữ (Kèm Nghiên Cứu)</button>
 
         <hr>
         
         <h3>Kết quả AI</h3>
         <div id="results-content">
-            <p style="color: #605e5c;">(Kết quả sẽ hiển thị ở đây)</p>
+            <p style="color: #605e5c;">(Kết quả từ Q&A hoặc Giải thích sẽ hiển thị ở đây)</p>
         </div>
 
     </div>

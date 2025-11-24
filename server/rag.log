@@ -1,0 +1,52 @@
+2025-11-24 23:21:54,763 [INFO] Use pytorch device_name: cpu
+2025-11-24 23:21:54,763 [INFO] Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-11-24 23:21:59,347 [WARNING]  * Debugger is active!
+2025-11-24 23:21:59,362 [INFO]  * Debugger PIN: 131-009-956
+2025-11-24 23:23:40,158 [INFO] 127.0.0.1 - - [24/Nov/2025 23:23:40] "OPTIONS /api/upload-file HTTP/1.1" 200 -
+2025-11-24 23:23:40,214 [INFO] 127.0.0.1 - - [24/Nov/2025 23:23:40] "OPTIONS /api/upload-file HTTP/1.1" 200 -
+2025-11-24 23:23:53,054 [INFO] Loading faiss with AVX512 support.
+2025-11-24 23:23:53,054 [INFO] Could not load library with AVX512 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx512'")
+2025-11-24 23:23:53,055 [INFO] Loading faiss with AVX2 support.
+2025-11-24 23:23:53,089 [INFO] Successfully loaded faiss with AVX2 support.
+2025-11-24 23:23:53,107 [INFO] INDEXED 338 chunks in 12.682s
+2025-11-24 23:23:53,107 [INFO] 127.0.0.1 - - [24/Nov/2025 23:23:53] "POST /api/upload-file HTTP/1.1" 200 -
+2025-11-24 23:23:53,165 [INFO] INDEXED 338 chunks in 12.6973s
+2025-11-24 23:23:53,165 [INFO] 127.0.0.1 - - [24/Nov/2025 23:23:53] "POST /api/upload-file HTTP/1.1" 200 -
+2025-11-24 23:24:53,137 [INFO] 127.0.0.1 - - [24/Nov/2025 23:24:53] "OPTIONS /api/global-qna HTTP/1.1" 200 -
+2025-11-24 23:24:56,646 [INFO] 
+======== RAG QUERY ========
+Question: Trao \u0111\u1ed5i sinh viên và h\u1ee3p tác trong \u0111ào t\u1ea1oTrao \u0111\u1ed5i sinh viên và h\u1ee3p tác trong \u0111ào t\u1ea1o?
+Context Chunks: 5
+Search Time: 0.0161s
+LLM Time: 2.904s
+Total: 3.2409s
+Top Chunks: [{'chunkIndex': 0, 'score': 0.816230283034558, 'text': 'Trong h\u1ee3p tác \u0111ào t\u1ea1o gi\u1eefa Nhà tr\u01b0\u1eddng và c\u01a1 s\u1edf \u0111ào t\u1ea1o khác (sau \u0111ây g\u1ecdi là c\u01a1 s\u1edf ph\u1ed1i h\u1ee3p \u0111ào t\u1ea1o), vi\u1ec7c \u0111ánh giá và công nh\u1eadn s\u1ed1 l\u01b0\u1ee3ng tín ch\u1ec9 mà sinh viên tích l\u0169y t\u1ea1i c\u01a1 s\u1edf ph\u1ed1i h\u1ee3p \u0111ào t\u1ea1o không v\u01b0\u1ee3t quá 25% t\u1ed5ng kh\u1ed1i l\u01b0\u1ee3ng c\u1ee7a ch\u01b0\u01a1ng trình \u0111ào t\u1ea1o.\n\u0110i\u1ec1u 19. H\u1ecdc cùng lúc hai ch\u01b0\u01a1ng trình'}, {'chunkIndex': 1, 'score': 0.7938896552000101, 'text': 'Sinh viên không \u0111\u1ea1t m\u1ed9t h\u1ecdc ph\u1ea7n t\u1ef1 ch\u1ecdn s\u1ebd ph\u1ea3i h\u1ecdc l\u1ea1i h\u1ecdc ph\u1ea7n \u0111ó ho\u1eb7c có th\u1ec3 ch\u1ecdn h\u1ecdc m\u1ed9t h\u1ecdc ph\u1ea7n t\u1ef1 ch\u1ecdn khác theo quy \u0111\u1ecbnh trong ch\u01b0\u01a1ng trình \u0111ào t\u1ea1o.\nNhà tr\u01b0\u1eddng áp d\u1ee5ng ph\u01b0\u01a1ng th\u1ee9c t\u1ed5 ch\u1ee9c \u0111ào t\u1ea1o theo tín ch\u1ec9, áp d\u1ee5ng th\u1ed1ng nh\u1ea5t cho t\u1ea5t c\u1ea3 các khóa và hình th\u1ee9c \u0111ào t\u1ea1o.\n\u0110i\u1ec1u 4. Hình th\u1ee9c \u0111ào t\u1ea1o\n\u0110ào t\u1ea1o chính quy:'}, {'chunkIndex': 2, 'score': 0.7928997523074981, 'text': '\u0110\u01b0\u1ee3c chuy\u1ec3n duy nh\u1ea5t 1 l\u1ea7n trong khóa h\u1ecdc;\nNgành/ch\u01b0\u01a1ng trình \u0111ào t\u1ea1o sinh viên có nguy\u1ec7n v\u1ecdng \u0111\u01b0\u1ee3c chuy\u1ec3n \u0111\u1ebfn còn ch\u1ec9 tiêu \u0111ào t\u1ea1o. Trong tr\u01b0\u1eddng h\u1ee3p s\u1ed1 sinh viên có nguy\u1ec7n v\u1ecdng \u0111\u01b0\u1ee3c chuy\u1ec3n \u0111\u1ebfn l\u1edbn h\u01a1n ch\u1ec9 tiêu còn l\u1ea1i c\u1ee7a ngành/ch\u01b0\u01a1ng trình \u0111ào t\u1ea1o cho phép thì \u01b0u tiên sinh viên có \u0111i\u1ec3m trung bình tích l\u0169y cao h\u01a1n.\nTh\u1ee7 t\u1ee5c chuy\u1ec3n ngành/ch\u01b0\u01a1ng trình \u0111ào t\u1ea1o:\nSinh viên làm \u0111\u01a1n (theo m\u1eabu);'}, {'chunkIndex': 3, 'score': 0.7890212076169582, 'text': 'Th\u1eddi gian t\u1ed1i \u0111a sinh viên \u0111\u01b0\u1ee3c phép theo h\u1ecdc trong ngành/ch\u01b0\u01a1ng trình \u0111ào t\u1ea1o m\u1edbi tính t\u1eeb ngày sinh viên nh\u1eadp h\u1ecdc ngành/ch\u01b0\u01a1ng trình \u0111ào t\u1ea1o trúng tuy\u1ec3n vào Nhà tr\u01b0\u1eddng.\n\u0110i\u1ec1u 18. Trao \u0111\u1ed5i sinh viên và h\u1ee3p tác trong \u0111ào t\u1ea1o\n\u0110i\u1ec1u ki\u1ec7n trao \u0111\u1ed5i sinh viên, h\u1ee3p tác \u0111ào t\u1ea1o, vi\u1ec7c công nh\u1eadn k\u1ebft qu\u1ea3 h\u1ecdc t\u1eadp và chuy\u1ec3n \u0111\u1ed5i tín ch\u1ec9 cho sinh viên khi th\u1ef1c hi\u1ec7n ch\u01b0\u01a1ng trình \u0111ào t\u1ea1o \u0111\u01b0\u1ee3c quy \u0111\u1ecbnh trong m\u1ed9t v\u0103n b\u1ea3n riêng và công khai trên c\u1ed5ng thông tin \u0111i\u1ec7n t\u1eed c\u1ee7a Nhà tr\u01b0\u1eddng.'}, {'chunkIndex': 4, 'score': 0.7868645566398953, 'text': 'M\u1ee5c \u0111ích\nT\u1ea1o c\u01a1 s\u1edf pháp lý \u0111\u1ec3 nhà tr\u01b0\u1eddng ph\u1ed1i h\u1ee3p v\u1edbi chính quy\u1ec1n \u0111\u1ecba ph\u01b0\u01a1ng trong vi\u1ec7c qu\u1ea3n lý và h\u1ed7 tr\u1ee3 cho h\u1ecdc sinh, sinh viên ngo\u1ea1i trú có môi tr\u01b0\u1eddng \u0103n, \u1edf, sinh ho\u1ea1t lành m\u1ea1nh, h\u1ecdc t\u1eadp và rèn luy\u1ec7n t\u1ed1t, \u0111\u1ed3ng th\u1eddi t\u1ea1o \u0111i\u1ec1u ki\u1ec7n cho h\u1ecdc sinh, sinh viên tham gia và phát huy \u0111\u01b0\u1ee3c n\u0103ng l\u1ef1c c\u1ee7a mình trong vi\u1ec7c xây d\u1ef1ng \u0111\u1eddi s\u1ed1ng v\u0103n hóa, n\u1ec1n n\u1ebfp, k\u1ef7 c\u01b0\u01a1ng, phòng ch\u1ed1ng t\u1ed9i ph\u1ea1m, t\u1ec7 n\u1ea1n xã h\u1ed9i \u1edf n\u01a1i c\u01b0 trú.\nQuy\u1ec1n c\u1ee7a h\u1ecdc sinh, sinh viên ngo\u1ea1i trú'}]
+===========================
+
+2025-11-24 23:24:56,646 [INFO] 127.0.0.1 - - [24/Nov/2025 23:24:56] "POST /api/global-qna HTTP/1.1" 200 -
+2025-11-24 23:26:04,067 [INFO]  * Detected change in 'E:\\tai lieu\\hoc ki 9\\Công ngh\u1ec7 doanh nghi\u1ec7p\\word_ui\\NLPSearch\\server\\chunker.py', reloading
+2025-11-24 23:26:20,015 [INFO] Use pytorch device_name: cpu
+2025-11-24 23:26:20,015 [INFO] Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-11-24 23:26:24,817 [WARNING]  * Debugger is active!
+2025-11-24 23:26:24,817 [INFO]  * Debugger PIN: 131-009-956
+2025-11-24 23:28:37,362 [INFO] 127.0.0.1 - - [24/Nov/2025 23:28:37] "OPTIONS /api/upload-file HTTP/1.1" 200 -
+2025-11-24 23:28:46,224 [INFO] Loading faiss with AVX512 support.
+2025-11-24 23:28:46,224 [INFO] Could not load library with AVX512 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx512'")
+2025-11-24 23:28:46,224 [INFO] Loading faiss with AVX2 support.
+2025-11-24 23:28:46,249 [INFO] Successfully loaded faiss with AVX2 support.
+2025-11-24 23:28:46,261 [INFO] INDEXED 338 chunks in 8.6373s
+2025-11-24 23:28:46,261 [INFO] 127.0.0.1 - - [24/Nov/2025 23:28:46] "POST /api/upload-file HTTP/1.1" 200 -
+2025-11-24 23:29:05,846 [INFO] 127.0.0.1 - - [24/Nov/2025 23:29:05] "OPTIONS /api/global-qna HTTP/1.1" 200 -
+2025-11-24 23:29:10,057 [INFO] 
+======== RAG QUERY ========
+Question: H\u1ecdc liên thông \u0111\u1ed1i v\u1edbi ng\u01b0\u1eddi có v\u0103n b\u1eb1ng khác?
+Context Chunks: 5
+Search Time: 0.0s
+LLM Time: 3.6463s
+Total: 3.901s
+Top Chunks: [{'chunkIndex': 0, 'score': 0.7965802307980393, 'text': '\u0110i\u1ec1u 20. H\u1ecdc liên thông \u0111\u1ed1i v\u1edbi ng\u01b0\u1eddi có v\u0103n b\u1eb1ng khác\nNg\u01b0\u1eddi \u0111ã t\u1ed1t nghi\u1ec7p các trình \u0111\u1ed9 \u0111ào t\u1ea1o c\u1ee7a giáo d\u1ee5c ngh\u1ec1 nghi\u1ec7p \u0111\u01b0\u1ee3c d\u1ef1 tuy\u1ec3n và h\u1ecdc liên thông lên trình \u0111\u1ed9 \u0111\u1ea1i h\u1ecdc theo quy \u0111\u1ecbnh hi\u1ec7n hành c\u1ee7a Chính ph\u1ee7, Th\u1ee7 t\u01b0\u1edbng Chính ph\u1ee7, B\u1ed9 Giáo d\u1ee5c và \u0110ào t\u1ea1o và c\u1ee7a Nhà tr\u01b0\u1eddng.\nNg\u01b0\u1eddi \u0111ã t\u1ed1t nghi\u1ec7p \u0111\u1ea1i h\u1ecdc \u0111\u01b0\u1ee3c d\u1ef1 tuy\u1ec3n và h\u1ecdc liên thông \u0111\u1ec3 nh\u1eadn thêm m\u1ed9t b\u1eb1ng t\u1ed1t nghi\u1ec7p \u0111\u1ea1i h\u1ecdc c\u1ee7a m\u1ed9t ngành \u0111ào t\u1ea1o khác.'}, {'chunkIndex': 1, 'score': 0.7472116913312185, 'text': 'Th\u1ee7 t\u1ee5c \u0111\u0103ng ký h\u1ecdc l\u1ea1i, h\u1ecdc \u0111\u1ed5i gi\u1ed1ng nh\u01b0 \u0111\u1ed1i v\u1edbi \u0111\u0103ng ký m\u1ed9t h\u1ecdc ph\u1ea7n m\u1edbi;'}, {'chunkIndex': 2, 'score': 0.7299359168256921, 'text': '+ Sinh viên có b\u1eb1ng \u0110\u1ea1i h\u1ecdc Ngo\u1ea1i ng\u1eef \u0111\u01b0\u1ee3c mi\u1ec5n h\u1ecdc và ghi \u0111i\u1ec3m 10 cho h\u1ecdc ph\u1ea7n B1.'}, {'chunkIndex': 3, 'score': 0.7290555019173874, 'text': 'K\u1ebf ho\u1ea1ch th\u1ef1c hi\u1ec7n ch\u1ebf \u0111\u1ed9 chính sách s\u1ebd \u0111\u01b0\u1ee3c Nhà tr\u01b0\u1eddng thông báo vào \u0111\u1ea7u m\u1ed7i h\u1ecdc k\u1ef3.\nMi\u1ec5n gi\u1ea3m h\u1ecdc phí\n\u0110\u1ed1i t\u01b0\u1ee3ng \u0111\u01b0\u1ee3c mi\u1ec5n 100% h\u1ecdc phí\nNg\u01b0\u1eddi có công v\u1edbi cách m\u1ea1ng và thân nhân c\u1ee7a ng\u01b0\u1eddi có công v\u1edbi cách m\u1ea1ng theo Pháp l\u1ec7nh \u01b0u \u0111ãi ng\u01b0\u1eddi có công v\u1edbi cách m\u1ea1ng \u0111\u01b0\u1ee3c h\u1ee3p nh\u1ea5t t\u1ea1i v\u0103n b\u1ea3n s\u1ed1 01/VBHN-VBQH ngày 30/7/2012 c\u1ee7a V\u0103n phòng Qu\u1ed1c h\u1ed9i (kho\u1ea3n 1 \u0110i\u1ec1u 15-N\u0110 81). C\u1ee5 th\u1ec3:'}, {'chunkIndex': 4, 'score': 0.7259099526667268, 'text': '\u0110i\u1ec1u ki\u1ec7n, th\u1ee7 t\u1ee5c ti\u1ebfp nh\u1eadn h\u1ecdc liên thông lên trình \u0111\u1ed9 \u0111\u1ea1i h\u1ecdc th\u1ef1c hi\u1ec7n theo quy \u0111\u1ecbnh hi\u1ec7n hành c\u1ee7a Chính ph\u1ee7, Th\u1ee7 t\u01b0\u1edbng Chính ph\u1ee7, B\u1ed9 Giáo d\u1ee5c và \u0110ào t\u1ea1o và quy ch\u1ebf tuy\u1ec3n sinh c\u1ee7a Nhà tr\u01b0\u1eddng.\n\u0110i\u1ec1u 21. X\u1eed lý vi ph\u1ea1m \u0111\u1ed1i v\u1edbi sinh viên'}]
+===========================
+
+2025-11-24 23:29:10,057 [INFO] 127.0.0.1 - - [24/Nov/2025 23:29:10] "POST /api/global-qna HTTP/1.1" 200 -
