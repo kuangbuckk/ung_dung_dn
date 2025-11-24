@@ -1,54 +1,27 @@
-// ===============================
-// CONFIG
-// ===============================
 const BACKEND_URL = "http://localhost:3001/api";
 let fileId = null;
 let fileDisplayName = "Document_Content.txt";
 
 // ===============================
-// UI HELPERS
+// BACKEND WRAPPER
 // ===============================
-const BUTTON_LABELS = {
-    "index-button": "Upload Tài liệu Lên File Store",
-    "qna-button": "Trả lời Câu hỏi (Toàn Tài liệu)",
-    "explain-button": "Giải thích Thuật ngữ (Kèm Nghiên Cứu)"
-};
-
-function setProcessing(isProcessing, button, statusDiv, processName) {
-    const spinner = document.getElementById("loading-spinner");
-
-    Object.entries(BUTTON_LABELS).forEach(([id, text]) => {
-        const btn = document.getElementById(id);
-        if (!btn) return;
-
-        btn.disabled = isProcessing;
-        btn.textContent =
-            isProcessing && btn === button
-                ? `Đang xử lý ${processName}...`
-                : text;
+async function apiPost(path, data) {
+    const res = await fetch(`${BACKEND_URL}/${path}`, {
+        method:"POST",
+        headers:{"Content-Type":"application/json"},
+        body:JSON.stringify(data)
     });
-
-    if (isProcessing) {
-        spinner.classList.remove("d-none");
-        statusDiv.textContent = `Đang thực hiện ${processName} bằng Gemini...`;
-    } else {
-        spinner.classList.add("d-none");
-    }
-}
-
-function displayResult(resultsDiv, title, content) {
-    resultsDiv.innerHTML = `
-        <h4 style="padding-bottom:6px;border-bottom:1px solid #ddd">${title}</h4>
-        <p style="white-space:pre-wrap">${content}</p>
-    `;
+    const json = await res.json().catch(()=>({error:`HTTP ${res.status}`}));
+    if(!res.ok || json.error) throw new Error(json.error || `HTTP ${res.status}`);
+    return json;
 }
 
 // ===============================
-// WORD API HELPERS
+// UPLOAD LOGIC
 // ===============================
 async function getFullDocumentText() {
     let fullText = "";
-    await Word.run(async (context) => {
+    await Word.run(async context=>{
         const body = context.document.body;
         body.load("text");
         await context.sync();
@@ -57,137 +30,146 @@ async function getFullDocumentText() {
     return fullText;
 }
 
-async function getSelectedText(context) {
-    const r = context.document.getSelection();
-    r.load("text");
-    await context.sync();
-    return r.text.trim();
+function showProgress(percent){
+    const container = document.getElementById("upload-progress-container");
+    const bar = document.getElementById("upload-progress-bar");
+    const text = document.getElementById("upload-progress-text");
+    container.classList.remove("d-none");
+    bar.style.width = `${percent}%`;
+    text.textContent = `${Math.floor(percent)}%`;
 }
 
-// ===============================
-// BACKEND CALL WRAPPERS
-// ===============================
-async function apiPost(path, data) {
-    const res = await fetch(`${BACKEND_URL}/${path}`, {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(data),
-    });
-
-    const json = await res.json().catch(() => ({
-        error: `HTTP ${res.status}`,
-    }));
-
-    if (!res.ok || json.error) {
-        throw new Error(json.error || `HTTP ${res.status}`);
-    }
-    return json;
+function hideProgress(){
+    const container = document.getElementById("upload-progress-container");
+    container.classList.add("d-none");
 }
 
-// UPLOAD
-async function runUploadLogic(documentText, displayName) {
-    const res = await apiPost("upload-file", {
-        documentText,
-        displayName,
-    });
+async function runUpload(statusDiv, button){
+    button.disabled = true;
+    statusDiv.textContent = "Đang upload tài liệu...";
+    showProgress(0);
 
-    fileId = res.fileId;
-    return res.message;
-}
-
-// Global Q&A
-async function runGlobalQNALogic(question, resultsDiv) {
-    const data = await apiPost("global-qna", { userQuestion: question });
-
-    let text = data.result;
-    if (data.citation) text += `\n\n--- Trích dẫn ---\n${data.citation}`;
-
-    displayResult(resultsDiv, `Kết quả cho câu hỏi: "${question}"`, text);
-}
-
-// Explain
-async function runExplainLogic(term, resultsDiv) {
-    const data = await apiPost("explain", { term });
-    displayResult(resultsDiv, `Giải thích: "${term}"`, data.result);
-}
-
-// ===============================
-// EVENT WRAPPERS
-// ===============================
-async function runUpload(statusDiv, button) {
-    const process = "Upload File";
-    setProcessing(true, button, statusDiv, process);
-
-    try {
+    try{
         const text = await getFullDocumentText();
-        if (!text) throw new Error("Tài liệu trống.");
+        if(!text) throw new Error("Tài liệu trống.");
 
-        const msg = await runUploadLogic(text, fileDisplayName);
-        statusDiv.textContent = `${msg}. ID: ${fileId}`;
+        // Simulate progress
+        let progress=0;
+        const interval = setInterval(()=>{
+            progress += Math.random()*10;
+            if(progress>95) progress=95;
+            showProgress(progress);
+        }, 300);
 
-    } catch (e) {
-        statusDiv.textContent = `Lỗi Upload: ${e.message}`;
-    } finally {
-        setProcessing(false, button, statusDiv, process);
+        // Call backend
+        const res = await apiPost("upload-file",{documentText:text, displayName:fileDisplayName});
+        clearInterval(interval);
+        showProgress(100);
+        fileId = res.fileId;
+        statusDiv.textContent = `Upload xong (${res.chunks} chunks, ${res.time}s)`;
+        console.log(`Indexed ${res.chunks} chunks in ${res.time}s`);
+
+    }catch(e){
+        console.error(e);
+        statusDiv.textContent = `Lỗi upload: ${e.message}`;
+        hideProgress();
+    }finally{
+        button.disabled=false;
+        setTimeout(hideProgress,1000);
     }
 }
 
-async function runGlobalQNA(statusDiv, resultsDiv, button, input) {
-    const process = "Global Q&A";
-    setProcessing(true, button, statusDiv, process);
+// ===============================
+// CHAT UI
+// ===============================
+const chatContainer = document.getElementById("chat-container");
+const chatInput = document.getElementById("chat-input");
+const chatSendBtn = document.getElementById("chat-send-btn");
 
-    try {
-        const q = input.value.trim();
-        if (!q) throw new Error("Vui lòng nhập câu hỏi.");
-        if (!fileId) throw new Error("Chưa upload tài liệu.");
-
-        await runGlobalQNALogic(q, resultsDiv);
-        statusDiv.textContent = "Hoàn tất Global Q&A.";
-    } catch (e) {
-        statusDiv.textContent = `Lỗi: ${e.message}`;
-    } finally {
-        setProcessing(false, button, statusDiv, process);
-    }
+function addChatMessage(text,sender="bot"){
+    const msg = document.createElement("div");
+    msg.textContent = text;
+    msg.className = sender;
+    chatContainer.appendChild(msg);
+    chatContainer.scrollTop = chatContainer.scrollHeight;
 }
 
-async function runExplain(statusDiv, resultsDiv, button) {
-    const process = "Giải thích";
-    setProcessing(true, button, statusDiv, process);
+async function sendChatQuestion(){
+    const q = chatInput.value.trim();
+    if(!q) return;
+    addChatMessage(q,"user");
+    chatInput.value="";
+    if(!fileId){ addChatMessage("Vui lòng upload tài liệu trước.","bot"); return; }
 
-    await Word.run(async (context) => {
-        try {
-            const term = await getSelectedText(context);
-            if (!term) throw new Error("Vui lòng chọn thuật ngữ.");
+    try{
+        const data = await apiPost("global-qna",{userQuestion:q});
+        addChatMessage(data.result,"bot");
 
-            await runExplainLogic(term, resultsDiv);
-            statusDiv.textContent = "Hoàn tất.";
-        } catch (e) {
-            statusDiv.textContent = `Lỗi: ${e.message}`;
+        // Highlight only top 1 citation
+        if (data.citations && data.citations.length > 0) {
+            const topCitation = data.citations[0];
+            await Word.run(async context => {
+                const body = context.document.body;
+                const highlightTexts = topCitation.text.match(/.{1,200}/g); // chia nhỏ 200 ký tự
+
+                for (const textPart of highlightTexts) {
+                    const searchResults = body.search(textPart, { matchCase: false });
+                    searchResults.load("items");
+                    await context.sync();
+                    searchResults.items.forEach(r => r.font.highlightColor = "#FFFF00");
+                }
+
+                // Scroll tới first highlight
+                if (highlightTexts.length > 0) {
+                    const firstResult = body.search(highlightTexts[0], { matchCase: false });
+                    firstResult.load("items");
+                    await context.sync();
+                    if (firstResult.items.length > 0) firstResult.items[0].select();
+                }
+
+                await context.sync();
+
+                // Xóa highlight sau 3s
+                setTimeout(async () => {
+                    await Word.run(async ctx => {
+                        const body2 = ctx.document.body;
+                        for (const txt of highlightTexts) {
+                            const results = body2.search(txt, { matchCase: false });
+                            results.load("items");
+                            await ctx.sync();
+                            results.items.forEach(r => r.font.highlightColor = null);
+                        }
+                        await ctx.sync();
+                    });
+                }, 3000);
+            });
         }
-    }).finally(() => {
-        setProcessing(false, button, statusDiv, process);
-    });
+
+    }catch(e){
+        console.error(e);
+        addChatMessage("Lỗi khi gọi server: "+e.message,"bot");
+    }
 }
 
-// ===============================
-// INIT
-// ===============================
-Office.onReady((info) => {
-    if (info.host !== Office.HostType.Word) return;
+chatSendBtn.onclick = sendChatQuestion;
+chatInput.addEventListener("keydown",e=>{
+    if(e.key==="Enter" && !e.shiftKey){
+        e.preventDefault();
+        sendChatQuestion();
+    }
+});
 
+let autoUploaded=false;
+Office.onReady(info=>{
+    if(info.host!==Office.HostType.Word) return;
     const statusDiv = document.getElementById("status");
-    const resultsDiv = document.getElementById("results-content");
-
     const btnUpload = document.getElementById("index-button");
-    const btnQna = document.getElementById("qna-button");
-    const btnExplain = document.getElementById("explain-button");
-    const inputQna = document.getElementById("qna-input");
 
-    // Auto-upload khi mở
-    statusDiv.textContent = "Khởi tạo... Đang upload tài liệu...";
-    setTimeout(() => runUpload(statusDiv, btnUpload), 500);
+    if(!autoUploaded){
+        autoUploaded=true;
+        statusDiv.textContent="Khởi tạo... Đang upload tài liệu...";
+        setTimeout(()=>runUpload(statusDiv,btnUpload),500);
+    }
 
-    btnUpload.onclick = () => runUpload(statusDiv, btnUpload);
-    btnQna.onclick = () => runGlobalQNA(statusDiv, resultsDiv, btnQna, inputQna);
-    btnExplain.onclick = () => runExplain(statusDiv, resultsDiv, btnExplain);
+    btnUpload.onclick = ()=>runUpload(statusDiv,btnUpload);
 });

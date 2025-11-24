@@ -50,3 +50,382 @@ Top Chunks: [{'chunkIndex': 0, 'score': 0.7965802307980393, 'text': '\u0110i\u1e
 ===========================
 
 2025-11-24 23:29:10,057 [INFO] 127.0.0.1 - - [24/Nov/2025 23:29:10] "POST /api/global-qna HTTP/1.1" 200 -
+2025-11-24 23:35:51,080 [INFO] 127.0.0.1 - - [24/Nov/2025 23:35:51] "OPTIONS /api/upload-file HTTP/1.1" 200 -
+2025-11-24 23:35:51,152 [INFO] 127.0.0.1 - - [24/Nov/2025 23:35:51] "OPTIONS /api/upload-file HTTP/1.1" 200 -
+2025-11-24 23:36:03,353 [INFO] INDEXED 338 chunks in 12.0043s
+2025-11-24 23:36:03,353 [INFO] 127.0.0.1 - - [24/Nov/2025 23:36:03] "POST /api/upload-file HTTP/1.1" 200 -
+2025-11-24 23:36:03,436 [INFO] INDEXED 338 chunks in 12.0354s
+2025-11-24 23:36:03,445 [INFO] 127.0.0.1 - - [24/Nov/2025 23:36:03] "POST /api/upload-file HTTP/1.1" 200 -
+2025-11-24 23:36:28,164 [INFO] 127.0.0.1 - - [24/Nov/2025 23:36:28] "OPTIONS /api/upload-file HTTP/1.1" 200 -
+2025-11-24 23:36:33,617 [INFO] 127.0.0.1 - - [24/Nov/2025 23:36:33] "OPTIONS /api/upload-file HTTP/1.1" 200 -
+2025-11-24 23:36:47,944 [INFO] 127.0.0.1 - - [24/Nov/2025 23:36:47] "OPTIONS /api/upload-file HTTP/1.1" 200 -
+2025-11-24 23:36:54,983 [INFO] INDEXED 338 chunks in 26.4426s
+2025-11-24 23:36:54,984 [INFO] 127.0.0.1 - - [24/Nov/2025 23:36:54] "POST /api/upload-file HTTP/1.1" 200 -
+2025-11-24 23:36:58,715 [INFO] INDEXED 338 chunks in 30.2428s
+2025-11-24 23:36:58,715 [INFO] 127.0.0.1 - - [24/Nov/2025 23:36:58] "POST /api/upload-file HTTP/1.1" 200 -
+2025-11-24 23:37:08,038 [INFO] INDEXED 338 chunks in 33.5793s
+2025-11-24 23:37:08,038 [INFO] 127.0.0.1 - - [24/Nov/2025 23:37:08] "POST /api/upload-file HTTP/1.1" 200 -
+2025-11-24 23:37:08,451 [INFO] INDEXED 338 chunks in 34.4951s
+2025-11-24 23:37:08,451 [INFO] 127.0.0.1 - - [24/Nov/2025 23:37:08] "POST /api/upload-file HTTP/1.1" 200 -
+2025-11-24 23:37:13,728 [INFO] INDEXED 338 chunks in 25.1421s
+2025-11-24 23:37:13,729 [INFO] 127.0.0.1 - - [24/Nov/2025 23:37:13] "POST /api/upload-file HTTP/1.1" 200 -
+2025-11-24 23:37:13,794 [INFO] INDEXED 338 chunks in 25.4961s
+2025-11-24 23:37:13,794 [INFO] 127.0.0.1 - - [24/Nov/2025 23:37:13] "POST /api/upload-file HTTP/1.1" 200 -
+2025-11-24 23:41:52,443 [INFO] Use pytorch device_name: cpu
+2025-11-24 23:41:52,444 [INFO] Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-11-24 23:42:09,108 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:3001
+ * Running on http://192.168.1.8:3001
+2025-11-24 23:42:09,108 [INFO] [33mPress CTRL+C to quit[0m
+2025-11-24 23:42:09,117 [INFO]  * Restarting with watchdog (windowsapi)
+2025-11-24 23:42:19,544 [INFO] Use pytorch device_name: cpu
+2025-11-24 23:42:19,544 [INFO] Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-11-24 23:42:23,486 [WARNING]  * Debugger is active!
+2025-11-24 23:42:23,490 [INFO]  * Debugger PIN: 131-009-956
+2025-11-24 23:44:07,925 [INFO] 127.0.0.1 - - [24/Nov/2025 23:44:07] "OPTIONS /api/upload-file HTTP/1.1" 200 -
+2025-11-24 23:44:16,086 [INFO] Loading faiss with AVX512 support.
+2025-11-24 23:44:16,087 [INFO] Could not load library with AVX512 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx512'")
+2025-11-24 23:44:16,087 [INFO] Loading faiss with AVX2 support.
+2025-11-24 23:44:16,112 [INFO] Successfully loaded faiss with AVX2 support.
+2025-11-24 23:44:16,133 [INFO] INDEXED 338 chunks in 7.9548s
+2025-11-24 23:44:16,134 [INFO] 127.0.0.1 - - [24/Nov/2025 23:44:16] "POST /api/upload-file HTTP/1.1" 200 -
+2025-11-24 23:45:30,052 [INFO] 127.0.0.1 - - [24/Nov/2025 23:45:30] "OPTIONS /api/upload-file HTTP/1.1" 200 -
+2025-11-24 23:45:30,128 [INFO] 127.0.0.1 - - [24/Nov/2025 23:45:30] "OPTIONS /api/upload-file HTTP/1.1" 200 -
+2025-11-24 23:45:44,476 [INFO] INDEXED 338 chunks in 14.1782s
+2025-11-24 23:45:44,477 [INFO] 127.0.0.1 - - [24/Nov/2025 23:45:44] "POST /api/upload-file HTTP/1.1" 200 -
+2025-11-24 23:45:44,575 [INFO] INDEXED 338 chunks in 14.2135s
+2025-11-24 23:45:44,576 [INFO] 127.0.0.1 - - [24/Nov/2025 23:45:44] "POST /api/upload-file HTTP/1.1" 200 -
+2025-11-24 23:46:22,440 [INFO] 127.0.0.1 - - [24/Nov/2025 23:46:22] "OPTIONS /api/global-qna HTTP/1.1" 200 -
+2025-11-24 23:46:26,670 [INFO] 
+======== RAG QUERY ========
+Question: H\u1ecdc liÍn thÙng \u0111\u1ed1i v\u1edbi ng\u01b0\u1eddi cÛ v\u0103n b\u1eb1ng kh·c
+Context Chunks: 5
+Search Time: 0.0114s
+LLM Time: 3.6173s
+Total: 3.9176s
+Top Chunks: [{'chunkIndex': 0, 'score': 0.79586089613855, 'text': '\u0110i\u1ec1u 20. H\u1ecdc liÍn thÙng \u0111\u1ed1i v\u1edbi ng\u01b0\u1eddi cÛ v\u0103n b\u1eb1ng kh·c\nNg\u01b0\u1eddi \u0111„ t\u1ed1t nghi\u1ec7p c·c trÏnh \u0111\u1ed9 \u0111‡o t\u1ea1o c\u1ee7a gi·o d\u1ee5c ngh\u1ec1 nghi\u1ec7p \u0111\u01b0\u1ee3c d\u1ef1 tuy\u1ec3n v‡ h\u1ecdc liÍn thÙng lÍn trÏnh \u0111\u1ed9 \u0111\u1ea1i h\u1ecdc theo quy \u0111\u1ecbnh hi\u1ec7n h‡nh c\u1ee7a ChÌnh ph\u1ee7, Th\u1ee7 t\u01b0\u1edbng ChÌnh ph\u1ee7, B\u1ed9 Gi·o d\u1ee5c v‡ \u0110‡o t\u1ea1o v‡ c\u1ee7a Nh‡ tr\u01b0\u1eddng.\nNg\u01b0\u1eddi \u0111„ t\u1ed1t nghi\u1ec7p \u0111\u1ea1i h\u1ecdc \u0111\u01b0\u1ee3c d\u1ef1 tuy\u1ec3n v‡ h\u1ecdc liÍn thÙng \u0111\u1ec3 nh\u1eadn thÍm m\u1ed9t b\u1eb1ng t\u1ed1t nghi\u1ec7p \u0111\u1ea1i h\u1ecdc c\u1ee7a m\u1ed9t ng‡nh \u0111‡o t\u1ea1o kh·c.'}, {'chunkIndex': 1, 'score': 0.7583094571157178, 'text': 'Th\u1ee7 t\u1ee5c \u0111\u0103ng k˝ h\u1ecdc l\u1ea1i, h\u1ecdc \u0111\u1ed5i gi\u1ed1ng nh\u01b0 \u0111\u1ed1i v\u1edbi \u0111\u0103ng k˝ m\u1ed9t h\u1ecdc ph\u1ea7n m\u1edbi;'}, {'chunkIndex': 2, 'score': 0.7330070666828316, 'text': '\u0110i\u1ec1u ki\u1ec7n, th\u1ee7 t\u1ee5c ti\u1ebfp nh\u1eadn h\u1ecdc liÍn thÙng lÍn trÏnh \u0111\u1ed9 \u0111\u1ea1i h\u1ecdc th\u1ef1c hi\u1ec7n theo quy \u0111\u1ecbnh hi\u1ec7n h‡nh c\u1ee7a ChÌnh ph\u1ee7, Th\u1ee7 t\u01b0\u1edbng ChÌnh ph\u1ee7, B\u1ed9 Gi·o d\u1ee5c v‡ \u0110‡o t\u1ea1o v‡ quy ch\u1ebf tuy\u1ec3n sinh c\u1ee7a Nh‡ tr\u01b0\u1eddng.\n\u0110i\u1ec1u 21. X\u1eed l˝ vi ph\u1ea1m \u0111\u1ed1i v\u1edbi sinh viÍn'}, {'chunkIndex': 3, 'score': 0.7312535549420439, 'text': '+ Sinh viÍn cÛ b\u1eb1ng \u0110\u1ea1i h\u1ecdc Ngo\u1ea1i ng\u1eef \u0111\u01b0\u1ee3c mi\u1ec5n h\u1ecdc v‡ ghi \u0111i\u1ec3m 10 cho h\u1ecdc ph\u1ea7n B1.'}, {'chunkIndex': 4, 'score': 0.7297747144264146, 'text': 'K\u1ebf ho\u1ea1ch th\u1ef1c hi\u1ec7n ch\u1ebf \u0111\u1ed9 chÌnh s·ch s\u1ebd \u0111\u01b0\u1ee3c Nh‡ tr\u01b0\u1eddng thÙng b·o v‡o \u0111\u1ea7u m\u1ed7i h\u1ecdc k\u1ef3.\nMi\u1ec5n gi\u1ea3m h\u1ecdc phÌ\n\u0110\u1ed1i t\u01b0\u1ee3ng \u0111\u01b0\u1ee3c mi\u1ec5n 100% h\u1ecdc phÌ\nNg\u01b0\u1eddi cÛ cÙng v\u1edbi c·ch m\u1ea1ng v‡ th‚n nh‚n c\u1ee7a ng\u01b0\u1eddi cÛ cÙng v\u1edbi c·ch m\u1ea1ng theo Ph·p l\u1ec7nh \u01b0u \u0111„i ng\u01b0\u1eddi cÛ cÙng v\u1edbi c·ch m\u1ea1ng \u0111\u01b0\u1ee3c h\u1ee3p nh\u1ea5t t\u1ea1i v\u0103n b\u1ea3n s\u1ed1 01/VBHN-VBQH ng‡y 30/7/2012 c\u1ee7a V\u0103n phÚng Qu\u1ed1c h\u1ed9i (kho\u1ea3n 1 \u0110i\u1ec1u 15-N\u0110 81). C\u1ee5 th\u1ec3:'}]
+===========================
+
+2025-11-24 23:46:26,671 [INFO] 127.0.0.1 - - [24/Nov/2025 23:46:26] "POST /api/global-qna HTTP/1.1" 200 -
+2025-11-24 23:46:56,381 [INFO] 127.0.0.1 - - [24/Nov/2025 23:46:56] "OPTIONS /api/global-qna HTTP/1.1" 200 -
+2025-11-24 23:46:59,159 [INFO] 
+======== RAG QUERY ========
+Question: Ch\u01b0\u01a1ng trÏnh \u0111‡o t\u1ea1o ngo\u1ea1i ng\u1eef
+Context Chunks: 5
+Search Time: 0.0172s
+LLM Time: 2.1588s
+Total: 2.4634s
+Top Chunks: [{'chunkIndex': 0, 'score': 0.7777533348771929, 'text': 'Ch\u01b0\u01a1ng trÏnh \u0111‡o t\u1ea1o \u0111\u01b0\u1ee3c x‚y d\u1ef1ng theo \u0111\u01a1n v\u1ecb tÌn ch\u1ec9, c\u1ea5u tr˙c t\u1eeb c·c mÙn h\u1ecdc ho\u1eb7c h\u1ecdc ph\u1ea7n (sau \u0111‚y g\u1ecdi chung l‡ h\u1ecdc ph\u1ea7n), trong \u0111Û ph\u1ea3i cÛ \u0111\u1ee7 c·c h\u1ecdc ph\u1ea7n b\u1eaft bu\u1ed9c v‡ \u0111·p \u1ee9ng chu\u1ea9n ch\u01b0\u01a1ng trÏnh \u0111‡o t\u1ea1o theo quy \u0111\u1ecbnh hi\u1ec7n h‡nh c\u1ee7a B\u1ed9 Gi·o d\u1ee5c v‡ \u0110‡o t\u1ea1o. Trong tr\u01b0\u1eddng h\u1ee3p \u0111‡o t\u1ea1o song ng‡nh ho\u1eb7c ng‡nh chÌnh - ng‡nh ph\u1ee5, ch\u01b0\u01a1ng trÏnh \u0111‡o t\u1ea1o ph\u1ea3i th\u1ec3 hi\u1ec7n rı kh\u1ed1i l\u01b0\u1ee3ng h\u1ecdc t\u1eadp chung v‡ riÍng theo t\u1eebng ng‡nh.'}, {'chunkIndex': 1, 'score': 0.7607696221619245, 'text': '\u0110i\u1ec1u 2. Ch\u01b0\u01a1ng trÏnh \u0111‡o t\u1ea1o v‡ th\u1eddi gian h\u1ecdc t\u1eadp\nTr\u01b0\u1eddng \u0110\u1ea1i h\u1ecdc Giao thÙng v\u1eadn t\u1ea3i \u0111‡o t\u1ea1o \u0111\u1ea1i h\u1ecdc c\u1ea5p b\u1eb1ng c\u1eed nh‚n trÏnh \u0111\u1ed9 b\u1eadc 6 v‡ b\u1eb1ng k\u1ef9 s\u01b0, ki\u1ebfn tr˙c s\u01b0 trÏnh \u0111\u1ed9 t\u01b0\u01a1ng \u0111\u01b0\u01a1ng b\u1eadc 7 theo khung trÏnh \u0111\u1ed9 qu\u1ed1c gia Vi\u1ec7t Nam, trÏnh \u0111\u1ed9 \u0111‡o t\u1ea1o v‡ th\u1eddi gian \u0111‡o t\u1ea1o chu\u1ea9n to‡n khÛa \u0111\u01b0\u1ee3c th\u1ec3 hi\u1ec7n trong ch\u01b0\u01a1ng trÏnh \u0111‡o t\u1ea1o c\u1ee7a t\u1eebng ng‡nh v‡ \u0111\u01b0\u1ee3c Hi\u1ec7u tr\u01b0\u1edfng k˝ ban h‡nh tr\u01b0\u1edbc khi ·p d\u1ee5ng.'}, {'chunkIndex': 2, 'score': 0.7589474403590996, 'text': 'Trong h\u1ee3p t·c \u0111‡o t\u1ea1o gi\u1eefa Nh‡ tr\u01b0\u1eddng v‡ c\u01a1 s\u1edf \u0111‡o t\u1ea1o kh·c (sau \u0111‚y g\u1ecdi l‡ c\u01a1 s\u1edf ph\u1ed1i h\u1ee3p \u0111‡o t\u1ea1o), vi\u1ec7c \u0111·nh gi· v‡ cÙng nh\u1eadn s\u1ed1 l\u01b0\u1ee3ng tÌn ch\u1ec9 m‡ sinh viÍn tÌch l\u0169y t\u1ea1i c\u01a1 s\u1edf ph\u1ed1i h\u1ee3p \u0111‡o t\u1ea1o khÙng v\u01b0\u1ee3t qu· 25% t\u1ed5ng kh\u1ed1i l\u01b0\u1ee3ng c\u1ee7a ch\u01b0\u01a1ng trÏnh \u0111‡o t\u1ea1o.\n\u0110i\u1ec1u 19. H\u1ecdc c˘ng l˙c hai ch\u01b0\u01a1ng trÏnh'}, {'chunkIndex': 3, 'score': 0.7454614493282172, 'text': 'Th\u1ee7 t\u1ee5c chuy\u1ec3n ng‡nh/ch\u01b0\u01a1ng trÏnh \u0111‡o t\u1ea1o:\nSinh viÍn l‡m \u0111\u01a1n (theo m\u1eabu);\nPhÚng \u0110‡o t\u1ea1o \u0111\u1ea1i h\u1ecdc ti\u1ebfp nh\u1eadn \u0111\u01a1n v‡ \u0111\u1ed1i chi\u1ebfu c·c \u0111i\u1ec1u ki\u1ec7n t\u1ea1i kho\u1ea3n 4 \u0110i\u1ec1u n‡y, \u0111\u1ec1 xu\u1ea5t Hi\u1ec7u tr\u01b0\u1edfng cho phÈp ho\u1eb7c khÙng cho phÈp chuy\u1ec3n ng‡nh/ch\u01b0\u01a1ng trÏnh \u0111‡o t\u1ea1o.'}, {'chunkIndex': 4, 'score': 0.7432297485640093, 'text': 'Tr\u01b0\u1eddng h\u1ee3p sinh viÍn ph\u1ea3i h\u1ecdc ngo\u1ea1i ng\u1eef th\u1ef1c hi\u1ec7n nh\u01b0 sau:\nCh\u01b0\u01a1ng trÏnh \u0111‡o t\u1ea1o ngo\u1ea1i ng\u1eef\nSinh viÍn \u0111\u01b0\u1ee3c ch\u1ecdn h\u1ecdc m\u1ed9t trong ba ngo\u1ea1i ng\u1eef: Anh v\u0103n, Nga v\u0103n v‡ Ph·p v\u0103n.\nCh\u01b0\u01a1ng trÏnh h\u1ecdc ngo\u1ea1i ng\u1eef \u0111\u01b0\u1ee3c c\u1ea5u tr˙c th‡nh ba ph\u1ea7n:\nPh\u1ea7n ngo\u1ea1i ng\u1eef t\u0103ng c\u01b0\u1eddng:'}]
+===========================
+
+2025-11-24 23:46:59,160 [INFO] 127.0.0.1 - - [24/Nov/2025 23:46:59] "POST /api/global-qna HTTP/1.1" 200 -
+2025-11-24 23:47:50,346 [INFO] 127.0.0.1 - - [24/Nov/2025 23:47:50] "OPTIONS /api/global-qna HTTP/1.1" 200 -
+2025-11-24 23:47:53,097 [INFO] 
+======== RAG QUERY ========
+Question: Quy \u0111\u1ecbnh B\u1ea3o hi\u1ec3m y t\u1ebf b\u1eaft bu\u1ed9c l‡ gÏ?
+Context Chunks: 5
+Search Time: 0.0116s
+LLM Time: 2.1509s
+Total: 2.4409s
+Top Chunks: [{'chunkIndex': 0, 'score': 0.7546480525773416, 'text': 'Quy \u0111\u1ecbnh B\u1ea3o hi\u1ec3m y t\u1ebf b\u1eaft bu\u1ed9c\nLu\u1eadt B\u1ea3o hi\u1ec3m y t\u1ebf s\u1ed1 25/2008/QH12 ng‡y 14 th·ng 11 n\u0103m 2008 c\u1ee7a Qu\u1ed1c h\u1ed9i kho· 12 - k\u1ef3 h\u1ecdp th\u1ee9 10 t\u1ea1i \u0111i\u1ec1u 12 kho\u1ea3n 21 qui \u0111\u1ecbnh h\u1ecdc sinh, sinh viÍn l‡ \u0111\u1ed1i t\u01b0\u1ee3ng b\u1eaft bu\u1ed9c tham gia b\u1ea3o hi\u1ec3m y t\u1ebf.'}, {'chunkIndex': 1, 'score': 0.6382772297912457, 'text': 'B\u1ea3ng quy \u0111\u1ed5i gi\u1eefa thang \u0111i\u1ec3m 10, thang \u0111i\u1ec3m ch\u1eef v‡ thang \u0111i\u1ec3m 4 \u0111\u01b0\u1ee3c th\u1ef1c hi\u1ec7n b\u1edfi ph\u1ea7n m\u1ec1m qu\u1ea3n l˝ \u0111‡o t\u1ea1o nh\u01b0 sau:'}, {'chunkIndex': 2, 'score': 0.6079538044471118, 'text': 'B\u01b0\u1edbc 1: Truy c\u1eadp v‡o trang http://qldt.utc.edu.vn v‡ Click v‡o ìQuÍn m\u1eadt kh\u1ea9uî;\nB\u01b0\u1edbc 2: Nh\u1eadp M√ SINH VI N v‡ \u0110\u1ecaA CH\u1ec8 EMAIL \u0111„ \u0111\u0103ng k˝ sau \u0111Û nh\u1ea5n n˙t ìG\u1eedi \u0111iî;'}, {'chunkIndex': 3, 'score': 0.59734310105336, 'text': 'Th\u1eddi gian kh·m s\u1ee9c kho\u1ebb \u0111\u1ed1i v\u1edbi sinh viÍn m\u1edbi v‡o tr\u01b0\u1eddng \u0111\u01b0\u1ee3c t\u1ed5 ch\u1ee9c ngay sau khi l‡m th\u1ee7 t\u1ee5c nh\u1eadp h\u1ecdc. Kh·m t\u1ea1i Tr\u1ea1m Y t\u1ebf T\u1ea7ng 1 Nh‡ B3 Tr\u01b0\u1eddng \u0110\u1ea1i h\u1ecdc Giao thÙng v\u1eadn t\u1ea3i.\nTh\u1eddi gian kh·m s\u1ee9c kho\u1ebb \u0111\u1ed1i v\u1edbi sinh viÍn n\u0103m cu\u1ed1i s\u1ebd \u0111\u01b0\u1ee3c ti\u1ebfn h‡nh tr\u01b0\u1edbc khi t\u1ed1t nghi\u1ec7p, l\u1ecbch c\u1ee5 th\u1ec3 s\u1ebd \u0111\u01b0\u1ee3c Tr\u1ea1m Y t\u1ebf thÙng b·o sau.\nQuy \u0111\u1ecbnh B\u1ea3o hi\u1ec3m y t\u1ebf b\u1eaft bu\u1ed9c'}, {'chunkIndex': 4, 'score': 0.5833778109179443, 'text': 'H\u01b0\u1edbng d\u1eabn \u0111\u0103ng k˝ h\u1ecdc\nB\u01b0\u1edbc 1: V‡o website http://qldt.utc.edu.vn\nB\u01b0\u1edbc 2: Nh\u1eadp T‡i kho\u1ea3n, M\u1eadt kh\u1ea9u => Nh\u1ea5n \u0110\u0103ng nh\u1eadp B\u01b0\u1edbc 3: Ch\u1ecdn \u0110\u0103ng k˝ h\u1ecdc => Ch\u1ecdn Sinh viÍn \u0111\u0103ng k˝ h\u1ecdc B\u01b0\u1edbc 4, 5, 6, 7, 8 xem minh h\u1ecda d\u01b0\u1edbi \u0111‚y:'}]
+===========================
+
+2025-11-24 23:47:53,097 [INFO] 127.0.0.1 - - [24/Nov/2025 23:47:53] "POST /api/global-qna HTTP/1.1" 200 -
+2025-11-24 23:48:13,773 [INFO] 127.0.0.1 - - [24/Nov/2025 23:48:13] "OPTIONS /api/global-qna HTTP/1.1" 200 -
+2025-11-24 23:48:20,086 [INFO] 
+======== RAG QUERY ========
+Question: K\u1ebf ho\u1ea1ch gi\u1ea3ng d\u1ea1y v‡ h\u1ecdc t\u1eadp?
+Context Chunks: 5
+Search Time: 0.0109s
+LLM Time: 5.7371s
+Total: 5.9929s
+Top Chunks: [{'chunkIndex': 0, 'score': 0.7516363929794128, 'text': '\u0110i\u1ec1u 6. K\u1ebf ho\u1ea1ch gi\u1ea3ng d\u1ea1y v‡ h\u1ecdc t\u1eadp\nK\u1ebf ho\u1ea1ch gi\u1ea3ng d\u1ea1y v‡ h\u1ecdc t\u1eadp chi ti\u1ebft hÛa vi\u1ec7c t\u1ed5 ch\u1ee9c th\u1ef1c hi\u1ec7n c·c ch\u01b0\u01a1ng trÏnh \u0111‡o t\u1ea1o theo n\u0103m h\u1ecdc, h\u1ecdc k\u1ef3, ph˘ h\u1ee3p v\u1edbi hÏnh th\u1ee9c \u0111‡o t\u1ea1o v‡ ph\u01b0\u01a1ng th\u1ee9c t\u1ed5 ch\u1ee9c \u0111‡o t\u1ea1o.'}, {'chunkIndex': 1, 'score': 0.7406303501786127, 'text': 'Gi\u1ea3ng d\u1ea1y, ki\u1ec3m tra, \u0111·nh gi· k\u1ebft qu\u1ea3 h\u1ecdc t\u1eadp m\u1ed9t c·ch kh·ch quan theo \u0111˙ng \u0111\u1ec1 c\u01b0\u01a1ng chi ti\u1ebft h\u1ecdc ph\u1ea7n, h\u01b0\u1edbng d\u1eabn d\u1ea1y h\u1ecdc, h\u01b0\u1edbng d\u1eabn \u0111·nh gi· k\u1ebft qu\u1ea3 h\u1ecdc t\u1eadp, th\u1eddi khÛa bi\u1ec3u v‡ l\u1ecbch gi\u1ea3ng d\u1ea1y \u0111„ \u0111\u01b0\u1ee3c phÍ duy\u1ec7t.'}, {'chunkIndex': 2, 'score': 0.7151549887659886, 'text': 'Ch\u01b0\u01a1ng II\nL\u1eacP K\u1ebe HO\u1ea0CH V¿ T\u1ed4 CH\u1ee8C GI\u1ea2NG D\u1ea0Y'}, {'chunkIndex': 3, 'score': 0.7086442108620264, 'text': 'Tham gia h\u1ecdc t\u1eadp, \u0111·nh gi· k\u1ebft qu\u1ea3 h\u1ecdc t\u1eadp theo \u0111˙ng th\u1eddi khÛa bi\u1ec3u v‡ h\u01b0\u1edbng d\u1eabn c\u1ee7a gi\u1ea3ng viÍn \u0111\u01b0\u1ee3c ph‚n cÙng gi\u1ea3ng d\u1ea1y l\u1edbp h\u1ecdc ph\u1ea7n;\n\u0110\u01b0\u1ee3c tÙn tr\u1ecdng, \u0111\u1ed1i x\u1eed bÏnh \u0111\u1eb3ng trong qu· trÏnh h\u1ecdc t\u1eadp v‡ \u0111·nh gi· k\u1ebft qu\u1ea3 h\u1ecdc t\u1eadp;\n\u0110\u01b0\u1ee3c thÙng b·o k\u1ebft qu\u1ea3 h\u1ecdc t\u1eadp trÍn h\u1ec7 th\u1ed1ng qu\u1ea3n l˝ \u0111‡o t\u1ea1o c\u1ee7a Nh‡ tr\u01b0\u1eddng;'}, {'chunkIndex': 4, 'score': 0.6848947668833125, 'text': 'K\u1ebf ho\u1ea1ch h\u1ecdc k\u1ef3 bao g\u1ed3m k\u1ebf ho\u1ea1ch m\u1edf l\u1edbp, hÏnh th\u1ee9c d\u1ea1y v‡ h\u1ecdc (tr\u1ef1c ti\u1ebfp ho\u1eb7c tr\u1ef1c tuy\u1ebfn), th\u1eddi gian h\u1ecdc, th\u1eddi gian thi c\u1ee7a c·c h\u1ecdc ph\u1ea7n \u0111\u01b0\u1ee3c t\u1ed5 ch\u1ee9c trong h\u1ecdc k\u1ef3 cho c·c kho· h\u1ecdc, ch\u01b0\u01a1ng trÏnh \u0111‡o t\u1ea1o v‡ hÏnh th\u1ee9c \u0111‡o t\u1ea1o. K\u1ebf ho\u1ea1ch h\u1ecdc k\u1ef3 ph\u1ea3i \u0111\u01b0\u1ee3c x‚y d\u1ef1ng v‡ cÙng b\u1ed1 k\u1ecbp th\u1eddi v\u1edbi \u0111\u1ea7y \u0111\u1ee7 thÙng tin c\u1ea7n thi\u1ebft, b\u1ea3o \u0111\u1ea3m thu\u1eadn ti\u1ec7n cho sinh viÍn x‚y d\u1ef1ng k\u1ebf ho\u1ea1ch h\u1ecdc t\u1eadp v‡ \u0111\u0103ng k˝ h\u1ecdc t\u1eadp.'}]
+===========================
+
+2025-11-24 23:48:20,087 [INFO] 127.0.0.1 - - [24/Nov/2025 23:48:20] "POST /api/global-qna HTTP/1.1" 200 -
+2025-11-24 23:51:16,150 [INFO] 127.0.0.1 - - [24/Nov/2025 23:51:16] "OPTIONS /api/upload-file HTTP/1.1" 200 -
+2025-11-24 23:51:16,213 [INFO] 127.0.0.1 - - [24/Nov/2025 23:51:16] "OPTIONS /api/upload-file HTTP/1.1" 200 -
+2025-11-24 23:51:28,526 [INFO] INDEXED 338 chunks in 12.1106s
+2025-11-24 23:51:28,527 [INFO] 127.0.0.1 - - [24/Nov/2025 23:51:28] "POST /api/upload-file HTTP/1.1" 200 -
+2025-11-24 23:51:28,547 [INFO] INDEXED 338 chunks in 12.0838s
+2025-11-24 23:51:28,548 [INFO] 127.0.0.1 - - [24/Nov/2025 23:51:28] "POST /api/upload-file HTTP/1.1" 200 -
+2025-11-24 23:51:43,207 [INFO] 127.0.0.1 - - [24/Nov/2025 23:51:43] "OPTIONS /api/upload-file HTTP/1.1" 200 -
+2025-11-24 23:51:55,699 [INFO] INDEXED 338 chunks in 12.1839s
+2025-11-24 23:51:55,700 [INFO] 127.0.0.1 - - [24/Nov/2025 23:51:55] "POST /api/upload-file HTTP/1.1" 200 -
+2025-11-24 23:51:55,734 [INFO] INDEXED 338 chunks in 12.1396s
+2025-11-24 23:51:55,735 [INFO] 127.0.0.1 - - [24/Nov/2025 23:51:55] "POST /api/upload-file HTTP/1.1" 200 -
+2025-11-24 23:52:05,187 [INFO] 127.0.0.1 - - [24/Nov/2025 23:52:05] "OPTIONS /api/upload-file HTTP/1.1" 200 -
+2025-11-24 23:52:13,644 [INFO] 127.0.0.1 - - [24/Nov/2025 23:52:13] "OPTIONS /api/upload-file HTTP/1.1" 200 -
+2025-11-24 23:52:13,758 [INFO] 127.0.0.1 - - [24/Nov/2025 23:52:13] "OPTIONS /api/upload-file HTTP/1.1" 200 -
+2025-11-24 23:52:47,475 [INFO] INDEXED 338 chunks in 41.9743s
+2025-11-24 23:52:47,476 [INFO] 127.0.0.1 - - [24/Nov/2025 23:52:47] "POST /api/upload-file HTTP/1.1" 200 -
+2025-11-24 23:52:48,158 [INFO] INDEXED 338 chunks in 42.5947s
+2025-11-24 23:52:48,159 [INFO] 127.0.0.1 - - [24/Nov/2025 23:52:48] "POST /api/upload-file HTTP/1.1" 200 -
+2025-11-24 23:52:52,024 [INFO] INDEXED 338 chunks in 42.4614s
+2025-11-24 23:52:52,025 [INFO] 127.0.0.1 - - [24/Nov/2025 23:52:52] "POST /api/upload-file HTTP/1.1" 200 -
+2025-11-24 23:52:52,486 [INFO] INDEXED 338 chunks in 42.3957s
+2025-11-24 23:52:52,487 [INFO] 127.0.0.1 - - [24/Nov/2025 23:52:52] "POST /api/upload-file HTTP/1.1" 200 -
+2025-11-24 23:52:53,708 [INFO] INDEXED 338 chunks in 39.7187s
+2025-11-24 23:52:53,709 [INFO] 127.0.0.1 - - [24/Nov/2025 23:52:53] "POST /api/upload-file HTTP/1.1" 200 -
+2025-11-24 23:52:54,084 [INFO] INDEXED 338 chunks in 40.2096s
+2025-11-24 23:52:54,085 [INFO] 127.0.0.1 - - [24/Nov/2025 23:52:54] "POST /api/upload-file HTTP/1.1" 200 -
+2025-11-24 23:54:12,108 [INFO] 127.0.0.1 - - [24/Nov/2025 23:54:12] "OPTIONS /api/global-qna HTTP/1.1" 200 -
+2025-11-24 23:54:16,277 [INFO] 
+======== RAG QUERY ========
+Question: T\u1ed5 ch\u1ee9c \u0111\u0103ng k˝ h\u1ecdc t\u1eadp?
+Context Chunks: 5
+Search Time: 0.008s
+LLM Time: 3.4983s
+Total: 3.9123s
+Top Chunks: [{'chunkIndex': 0, 'score': 0.7376631411202359, 'text': 'Th\u1eddi kho· bi\u1ec3u th\u1ec3 hi\u1ec7n th\u1eddi gian, \u0111\u1ecba \u0111i\u1ec3m, ho\u1ea1t \u0111\u1ed9ng d\u1ea1y v‡ h\u1ecdc c\u1ee7a t\u1eebng l\u1edbp thu\u1ed9c c·c kho· h\u1ecdc, hÏnh th\u1ee9c v‡ ch\u01b0\u01a1ng trÏnh \u0111‡o t\u1ea1o. Th\u1eddi khÛa bi\u1ec3u c\u1ee7a c·c l\u1edbp h\u1ecdc ph\u1ea7n bÏnh th\u01b0\u1eddng \u0111\u01b0\u1ee3c b\u1ed1 trÌ \u0111\u1ec1u trong c·c tu\u1ea7n c\u1ee7a h\u1ecdc k\u1ef3. \u0110\u1ed1i v\u1edbi c·c h\u1ecdc ph\u1ea7n \u0111\u1eb7c th˘ nh\u01b0 th\u1ef1c h‡nh, th\u1ef1c t\u1eadp cÛ th\u1ec3 b\u1ed1 trÌ x\u1ebfp l\u1ecbch h\u1ecdc t\u1eadp trung th\u1eddi gian ph˘ h\u1ee3p v\u1edbi kh\u1ed1i l\u01b0\u1ee3ng \u0111‡o t\u1ea1o.\n\u0110i\u1ec1u 7. T\u1ed5 ch\u1ee9c \u0111\u0103ng k˝ h\u1ecdc t\u1eadp'}, {'chunkIndex': 1, 'score': 0.7367323133762433, 'text': '\u0110i\u1ec1u 12. CÙng nh\u1eadn k\u1ebft qu\u1ea3 h\u1ecdc t\u1eadp v‡ chuy\u1ec3n \u0111\u1ed5i tÌn ch\u1ec9\nK\u1ebft qu\u1ea3 h\u1ecdc t\u1eadp ngo‡i tr\u01b0\u1eddng, k\u1ebft qu\u1ea3 h\u1ecdc t\u1eadp \u0111„ cÛ tr\u01b0\u1edbc khi nh\u1eadp h\u1ecdc c\u1ee7a sinh viÍn \u0111\u01b0\u1ee3c xem xÈt cÙng nh\u1eadn tÌn ch\u1ec9 cho sinh viÍn trong nh\u1eefng tr\u01b0\u1eddng h\u1ee3p nh\u01b0 sau:\nK\u1ebft qu\u1ea3 h\u1ecdc t\u1eadp \u1edf trÏnh \u0111\u1ed9 \u0111\u1ea1i h\u1ecdc c\u1ee7a sinh viÍn tr˙ng tuy\u1ec3n v‡ h\u1ecdc liÍn thÙng \u0111\u1ec3 nh\u1eadn thÍm m\u1ed9t v\u0103n b\u1eb1ng t\u1ed1t nghi\u1ec7p \u0111\u1ea1i h\u1ecdc c\u1ee7a m\u1ed9t ng‡nh \u0111‡o t\u1ea1o kh·c;\nK\u1ebft qu\u1ea3 h\u1ecdc t\u1eadp c\u1ee7a sinh viÍn t\u1ea1i c·c c\u01a1 s\u1edf gi·o d\u1ee5c \u0111\u1ea1i h\u1ecdc kh·c nay chuy\u1ec3n v\u1ec1 h\u1ecdc t\u1ea1i Nh‡ tr\u01b0\u1eddng;'}, {'chunkIndex': 2, 'score': 0.7260090786441077, 'text': 'M\u1ed9t s\u1ed1 tr\u01b0\u1eddng h\u1ee3p \u0111\u1eb7c bi\u1ec7t s\u1eed d\u1ee5ng c·c \u0111i\u1ec3m ch\u1eef x\u1ebfp lo\u1ea1i, khÙng \u0111\u01b0\u1ee3c tÌnh v‡o \u0111i\u1ec3m trung bÏnh h\u1ecdc t\u1eadp:\nI: \u0110i\u1ec3m ch\u01b0a ho‡n thi\u1ec7n do \u0111\u01b0\u1ee3c phÈp ho„n thi, ki\u1ec3m tra; X: \u0110i\u1ec3m ch\u01b0a ho‡n thi\u1ec7n do ch\u01b0a \u0111\u1ee7 d\u1eef li\u1ec7u;\nR: \u0110i\u1ec3m h\u1ecdc ph\u1ea7n \u0111\u01b0\u1ee3c mi\u1ec5n h\u1ecdc v‡ cÙng nh\u1eadn tÌn ch\u1ec9.\nH\u1ecdc l\u1ea1i v‡ h\u1ecdc c\u1ea3i thi\u1ec7n \u0111i\u1ec3m:'}, {'chunkIndex': 3, 'score': 0.7230546738456884, 'text': 'MÙi tr\u01b0\u1eddng h\u1ecdc t\u1eadp t\u1ea1i b\u1eadc \u0111\u1ea1i h\u1ecdc cÛ \u0111i\u1ec3m kh·c so v\u1edbi b\u1eadc h\u1ecdc ph\u1ed5 thÙng, \u0111Û l‡ vi\u1ec7c t\u1ed5 ch\u1ee9c h\u1ecdc t\u1eadp theo h\u1ec7 th\u1ed1ng tÌn ch\u1ec9. \u0110‚y l‡ hÏnh th\u1ee9c \u0111‡o t\u1ea1o v\u1edbi quy trÏnh m\u1ec1m d\u1ebbo, l\u1ea5y ng\u01b0\u1eddi h\u1ecdc l‡m trung t‚m, ng\u01b0\u1eddi h\u1ecdc ch\u1ee7 \u0111\u1ed9ng h\u01a1n trong qu· trÏnh h\u1ecdc t\u1eadp c\u1ee7a mÏnh. Ngo‡i ra, c·c sinh viÍn c\u1ea7n n\u1eafm b\u1eaft \u0111\u01b0\u1ee3c thÙng tin v\u1ec1 c·c ho\u1ea1t \u0111\u1ed9ng \u0111‡o t\u1ea1o, rËn luy\u1ec7n c\u1ee7a Nh‡ tr\u01b0\u1eddng. VÏ v\u1eady, \u0111‚y l‡ c\u1ea9m nang h\u1ed7 tr\u1ee3 v‡ gi˙p \u0111\u1ee1 c·c b\u1ea1n trong qu· trÏnh h\u1ecdc t\u1eadp, rËn luy\u1ec7n \u1edf b\u1eadc \u0111\u1ea1i h\u1ecdc, t\u1ea1i Tr\u01b0\u1eddng \u0110HGTVT.'}, {'chunkIndex': 4, 'score': 0.722575548666292, 'text': 'K\u1ebft qu\u1ea3 h\u1ecdc t\u1eadp c\u1ee7a sinh viÍn t\u1ea1i c·c c\u01a1 s\u1edf gi·o d\u1ee5c \u0111\u1ea1i h\u1ecdc kh·c nay chuy\u1ec3n v\u1ec1 h\u1ecdc t\u1ea1i Nh‡ tr\u01b0\u1eddng;\nK\u1ebft qu\u1ea3 h\u1ecdc t\u1eadp c\u1ee7a sinh viÍn t\u1ea1i c·c c\u01a1 s\u1edf \u0111‡o t\u1ea1o kh·c theo ch\u01b0\u01a1ng trÏnh trao \u0111\u1ed5i sinh viÍn \u0111\u01b0\u1ee3c k˝ k\u1ebft.\nH\u1ed9i \u0111\u1ed3ng chuyÍn mÙn c\u1ee7a khoa xem xÈt v‡ \u0111\u1ec1 ngh\u1ecb Nh‡ tr\u01b0\u1eddng cÙng nh\u1eadn, chuy\u1ec3n \u0111\u1ed5i tÌn ch\u1ec9 trÍn c\u01a1 s\u1edf \u0111\u1ed1i s·nh chu\u1ea9n \u0111\u1ea7u ra, n\u1ed9i dung v‡ kh\u1ed1i l\u01b0\u1ee3ng h\u1ecdc t\u1eadp, c·ch th\u1ee9c \u0111·nh gi· h\u1ecdc ph\u1ea7n v‡ c·c \u0111i\u1ec1u ki\u1ec7n b\u1ea3o \u0111\u1ea3m ch\u1ea5t l\u01b0\u1ee3ng th\u1ef1c hi\u1ec7n ch\u01b0\u01a1ng trÏnh theo t\u1eebng h\u1ecdc ph\u1ea7n.'}]
+===========================
+
+2025-11-24 23:54:16,277 [INFO] 127.0.0.1 - - [24/Nov/2025 23:54:16] "POST /api/global-qna HTTP/1.1" 200 -
+2025-11-24 23:54:41,549 [INFO] 127.0.0.1 - - [24/Nov/2025 23:54:41] "OPTIONS /api/global-qna HTTP/1.1" 200 -
+2025-11-24 23:54:47,025 [INFO] 
+======== RAG QUERY ========
+Question: LiÍn k\u1ebft \u0111‡o t\u1ea1o?
+Context Chunks: 5
+Search Time: 0.01s
+LLM Time: 4.8509s
+Total: 5.1704s
+Top Chunks: [{'chunkIndex': 0, 'score': 0.6788441732946876, 'text': 'Ch\u01b0\u01a1ng trÏnh \u0111‡o t\u1ea1o d\u1ef1 ki\u1ebfn liÍn k\u1ebft \u0111‡o t\u1ea1o \u0111„ \u0111\u01b0\u1ee3c t\u1ed5 ch\u1ee9c th\u1ef1c hi\u1ec7n t\u1ed1i thi\u1ec3u 03 kho· liÍn t\u1ee5c theo hÏnh th\u1ee9c chÌnh quy; t\u1eeb khÛa tuy\u1ec3n sinh n\u0103m 2024 yÍu c\u1ea7u ch\u01b0\u01a1ng trÏnh \u0111‡o t\u1ea1o \u0111„ \u0111\u01b0\u1ee3c cÙng nh\u1eadn \u0111\u1ea1t chu\u1ea9n ch\u1ea5t l\u01b0\u1ee3ng theo quy \u0111\u1ecbnh hi\u1ec7n h‡nh;\nB\u1ea3o \u0111\u1ea3m \u0111\u1ed9i ng\u0169 gi\u1ea3ng viÍn c\u01a1 h\u1eefu gi\u1ea3ng d\u1ea1y t\u1ed1i thi\u1ec3u 70% n\u1ed9i dung, kh\u1ed1i l\u01b0\u1ee3ng ch\u01b0\u01a1ng trÏnh \u0111‡o t\u1ea1o;\n\u0110„ ban h‡nh quy \u0111\u1ecbnh v\u1ec1 liÍn k\u1ebft v‡ \u0111„ th\u1ea9m \u0111\u1ecbnh c·c \u0111i\u1ec1u ki\u1ec7n b\u1ea3o \u0111\u1ea3m ch\u1ea5t l\u01b0\u1ee3ng c\u1ee7a c\u01a1 s\u1edf ph\u1ed1i h\u1ee3p \u0111‡o t\u1ea1o;'}, {'chunkIndex': 1, 'score': 0.6671938200579826, 'text': '15.000 \u0110o‡n viÍn, thanh niÍn sinh ho\u1ea1t trong 09 LiÍn Chi \u0111o‡n v\u1edbi t\u1ed5ng s\u1ed1 h\u01a1n 300 Chi \u0111o‡n.\n\u0110o‡n Thanh niÍn tr\u01b0\u1eddng \u0110\u1ea1i h\u1ecdc Giao thÙng v\u1eadn t\u1ea3i cÛ ch\u1ee9c n\u0103ng gi·o d\u1ee5c chÌnh tr\u1ecb, \u0111\u1ecbnh h\u01b0\u1edbng t\u01b0 t\u01b0\u1edfng cho \u0110o‡n viÍn Thanh niÍn, kh\u01a1i d\u1eady tinh th\u1ea7n s·ng t\u1ea1o, kh\u1edfi nghi\u1ec7p, xung kÌch, h\u0103ng h·i \u0111i \u0111\u1ea7u c\u1ee7a thanh niÍn trong c·c l\u0129nh v\u1ef1c h\u1ecdc t\u1eadp v‡ nghiÍn c\u1ee9u khoa h\u1ecdc, x‚y d\u1ef1ng v‡ b\u1ea3o v\u1ec7 T\u1ed5 qu\u1ed1c, chung s\u1ee9c vÏ c\u1ed9ng \u0111\u1ed3ng.\n\u0110\u1ecba ch\u1ec9: P201-202, H\u1ed9i tr\u01b0\u1eddng l\u1edbn\n-  \u0110i\u1ec7n tho\u1ea1i: (0243).766.4530'}, {'chunkIndex': 2, 'score': 0.655350066699462, 'text': '\u0110i\u1ec1n \u0111\u01a1n \u0111\u0103ng k˝ gia nh\u1eadp H\u1ed9i Sinh viÍn\n\u0110\u01b0\u1ee3c k\u1ebft n\u1ea1p t\u1ea1i Chi h\u1ed9i (l\u1edbp) ho\u1eb7c LiÍn chi h\u1ed9i (Khoa)'}, {'chunkIndex': 3, 'score': 0.6351760796482416, 'text': 'Nh\u1eefng sinh viÍn \u0111\u1ee7 \u0111i\u1ec1u ki\u1ec7n t\u1ed1t nghi\u1ec7p \u0111\u01b0\u1ee3c hi\u1ec7u tr\u01b0\u1edfng ra quy\u1ebft \u0111\u1ecbnh cÙng nh\u1eadn t\u1ed1t nghi\u1ec7p v‡ c\u1ea5p b\u1eb1ng t\u1ed1t nghi\u1ec7p, ph\u1ee5 l\u1ee5c v\u0103n b\u1eb1ng trong th\u1eddi h\u1ea1n 03 th·ng tÌnh t\u1eeb th\u1eddi \u0111i\u1ec3m sinh viÍn \u0111·p \u1ee9ng \u0111\u1ea7y \u0111\u1ee7 \u0111i\u1ec1u ki\u1ec7n t\u1ed1t nghi\u1ec7p v‡ ho‡n th‡nh ngh\u0129a v\u1ee5 v\u1edbi c\u01a1 s\u1edf \u0111‡o t\u1ea1o.'}, {'chunkIndex': 4, 'score': 0.6337554653173582, 'text': '\u0110i\u1ec1u 20. H\u1ecdc liÍn thÙng \u0111\u1ed1i v\u1edbi ng\u01b0\u1eddi cÛ v\u0103n b\u1eb1ng kh·c\nNg\u01b0\u1eddi \u0111„ t\u1ed1t nghi\u1ec7p c·c trÏnh \u0111\u1ed9 \u0111‡o t\u1ea1o c\u1ee7a gi·o d\u1ee5c ngh\u1ec1 nghi\u1ec7p \u0111\u01b0\u1ee3c d\u1ef1 tuy\u1ec3n v‡ h\u1ecdc liÍn thÙng lÍn trÏnh \u0111\u1ed9 \u0111\u1ea1i h\u1ecdc theo quy \u0111\u1ecbnh hi\u1ec7n h‡nh c\u1ee7a ChÌnh ph\u1ee7, Th\u1ee7 t\u01b0\u1edbng ChÌnh ph\u1ee7, B\u1ed9 Gi·o d\u1ee5c v‡ \u0110‡o t\u1ea1o v‡ c\u1ee7a Nh‡ tr\u01b0\u1eddng.\nNg\u01b0\u1eddi \u0111„ t\u1ed1t nghi\u1ec7p \u0111\u1ea1i h\u1ecdc \u0111\u01b0\u1ee3c d\u1ef1 tuy\u1ec3n v‡ h\u1ecdc liÍn thÙng \u0111\u1ec3 nh\u1eadn thÍm m\u1ed9t b\u1eb1ng t\u1ed1t nghi\u1ec7p \u0111\u1ea1i h\u1ecdc c\u1ee7a m\u1ed9t ng‡nh \u0111‡o t\u1ea1o kh·c.'}]
+===========================
+
+2025-11-24 23:54:47,025 [INFO] 127.0.0.1 - - [24/Nov/2025 23:54:47] "POST /api/global-qna HTTP/1.1" 200 -
+2025-11-24 23:57:01,392 [INFO] Use pytorch device_name: cpu
+2025-11-24 23:57:01,392 [INFO] Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-11-24 23:57:17,281 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:3001
+ * Running on http://192.168.1.8:3001
+2025-11-24 23:57:17,281 [INFO] [33mPress CTRL+C to quit[0m
+2025-11-24 23:57:17,294 [INFO]  * Restarting with watchdog (windowsapi)
+2025-11-24 23:57:29,070 [INFO] Use pytorch device_name: cpu
+2025-11-24 23:57:29,071 [INFO] Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-11-24 23:57:33,037 [WARNING]  * Debugger is active!
+2025-11-24 23:57:33,040 [INFO]  * Debugger PIN: 131-009-956
+2025-11-24 23:57:33,065 [INFO] 127.0.0.1 - - [24/Nov/2025 23:57:33] "OPTIONS /api/upload-file HTTP/1.1" 200 -
+2025-11-24 23:57:33,067 [INFO] 127.0.0.1 - - [24/Nov/2025 23:57:33] "OPTIONS /api/upload-file HTTP/1.1" 200 -
+2025-11-24 23:57:33,077 [INFO] 127.0.0.1 - - [24/Nov/2025 23:57:33] "OPTIONS /api/upload-file HTTP/1.1" 200 -
+2025-11-24 23:57:33,079 [INFO] 127.0.0.1 - - [24/Nov/2025 23:57:33] "OPTIONS /api/upload-file HTTP/1.1" 200 -
+2025-11-24 23:57:46,273 [INFO] Loading faiss with AVX512 support.
+2025-11-24 23:57:46,273 [INFO] Could not load library with AVX512 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx512'")
+2025-11-24 23:57:46,273 [INFO] Loading faiss with AVX2 support.
+2025-11-24 23:57:46,313 [INFO] Successfully loaded faiss with AVX2 support.
+2025-11-24 23:57:46,342 [INFO] INDEXED 338 chunks in 12.9492s
+2025-11-24 23:57:46,343 [INFO] 127.0.0.1 - - [24/Nov/2025 23:57:46] "POST /api/upload-file HTTP/1.1" 200 -
+2025-11-24 23:57:46,384 [INFO] INDEXED 338 chunks in 12.987s
+2025-11-24 23:57:46,385 [INFO] 127.0.0.1 - - [24/Nov/2025 23:57:46] "POST /api/upload-file HTTP/1.1" 200 -
+2025-11-24 23:58:05,320 [INFO] 127.0.0.1 - - [24/Nov/2025 23:58:05] "OPTIONS /api/global-qna HTTP/1.1" 200 -
+2025-11-24 23:58:09,857 [INFO] 
+======== RAG QUERY ========
+Question: T\u1ed5 ch\u1ee9c \u0111\u0103ng k˝ h\u1ecdc t\u1eadp?
+Context Chunks: 5
+Search Time: 0.0266s
+LLM Time: 3.2686s
+Total: 4.2249s
+Top Chunks: [{'chunkIndex': 0, 'score': 0.7376631411202359, 'text': 'Th\u1eddi kho· bi\u1ec3u th\u1ec3 hi\u1ec7n th\u1eddi gian, \u0111\u1ecba \u0111i\u1ec3m, ho\u1ea1t \u0111\u1ed9ng d\u1ea1y v‡ h\u1ecdc c\u1ee7a t\u1eebng l\u1edbp thu\u1ed9c c·c kho· h\u1ecdc, hÏnh th\u1ee9c v‡ ch\u01b0\u01a1ng trÏnh \u0111‡o t\u1ea1o. Th\u1eddi khÛa bi\u1ec3u c\u1ee7a c·c l\u1edbp h\u1ecdc ph\u1ea7n bÏnh th\u01b0\u1eddng \u0111\u01b0\u1ee3c b\u1ed1 trÌ \u0111\u1ec1u trong c·c tu\u1ea7n c\u1ee7a h\u1ecdc k\u1ef3. \u0110\u1ed1i v\u1edbi c·c h\u1ecdc ph\u1ea7n \u0111\u1eb7c th˘ nh\u01b0 th\u1ef1c h‡nh, th\u1ef1c t\u1eadp cÛ th\u1ec3 b\u1ed1 trÌ x\u1ebfp l\u1ecbch h\u1ecdc t\u1eadp trung th\u1eddi gian ph˘ h\u1ee3p v\u1edbi kh\u1ed1i l\u01b0\u1ee3ng \u0111‡o t\u1ea1o.\n\u0110i\u1ec1u 7. T\u1ed5 ch\u1ee9c \u0111\u0103ng k˝ h\u1ecdc t\u1eadp'}, {'chunkIndex': 1, 'score': 0.7367323133762433, 'text': '\u0110i\u1ec1u 12. CÙng nh\u1eadn k\u1ebft qu\u1ea3 h\u1ecdc t\u1eadp v‡ chuy\u1ec3n \u0111\u1ed5i tÌn ch\u1ec9\nK\u1ebft qu\u1ea3 h\u1ecdc t\u1eadp ngo‡i tr\u01b0\u1eddng, k\u1ebft qu\u1ea3 h\u1ecdc t\u1eadp \u0111„ cÛ tr\u01b0\u1edbc khi nh\u1eadp h\u1ecdc c\u1ee7a sinh viÍn \u0111\u01b0\u1ee3c xem xÈt cÙng nh\u1eadn tÌn ch\u1ec9 cho sinh viÍn trong nh\u1eefng tr\u01b0\u1eddng h\u1ee3p nh\u01b0 sau:\nK\u1ebft qu\u1ea3 h\u1ecdc t\u1eadp \u1edf trÏnh \u0111\u1ed9 \u0111\u1ea1i h\u1ecdc c\u1ee7a sinh viÍn tr˙ng tuy\u1ec3n v‡ h\u1ecdc liÍn thÙng \u0111\u1ec3 nh\u1eadn thÍm m\u1ed9t v\u0103n b\u1eb1ng t\u1ed1t nghi\u1ec7p \u0111\u1ea1i h\u1ecdc c\u1ee7a m\u1ed9t ng‡nh \u0111‡o t\u1ea1o kh·c;\nK\u1ebft qu\u1ea3 h\u1ecdc t\u1eadp c\u1ee7a sinh viÍn t\u1ea1i c·c c\u01a1 s\u1edf gi·o d\u1ee5c \u0111\u1ea1i h\u1ecdc kh·c nay chuy\u1ec3n v\u1ec1 h\u1ecdc t\u1ea1i Nh‡ tr\u01b0\u1eddng;'}, {'chunkIndex': 2, 'score': 0.7260090786441077, 'text': 'M\u1ed9t s\u1ed1 tr\u01b0\u1eddng h\u1ee3p \u0111\u1eb7c bi\u1ec7t s\u1eed d\u1ee5ng c·c \u0111i\u1ec3m ch\u1eef x\u1ebfp lo\u1ea1i, khÙng \u0111\u01b0\u1ee3c tÌnh v‡o \u0111i\u1ec3m trung bÏnh h\u1ecdc t\u1eadp:\nI: \u0110i\u1ec3m ch\u01b0a ho‡n thi\u1ec7n do \u0111\u01b0\u1ee3c phÈp ho„n thi, ki\u1ec3m tra; X: \u0110i\u1ec3m ch\u01b0a ho‡n thi\u1ec7n do ch\u01b0a \u0111\u1ee7 d\u1eef li\u1ec7u;\nR: \u0110i\u1ec3m h\u1ecdc ph\u1ea7n \u0111\u01b0\u1ee3c mi\u1ec5n h\u1ecdc v‡ cÙng nh\u1eadn tÌn ch\u1ec9.\nH\u1ecdc l\u1ea1i v‡ h\u1ecdc c\u1ea3i thi\u1ec7n \u0111i\u1ec3m:'}, {'chunkIndex': 3, 'score': 0.7230546738456884, 'text': 'MÙi tr\u01b0\u1eddng h\u1ecdc t\u1eadp t\u1ea1i b\u1eadc \u0111\u1ea1i h\u1ecdc cÛ \u0111i\u1ec3m kh·c so v\u1edbi b\u1eadc h\u1ecdc ph\u1ed5 thÙng, \u0111Û l‡ vi\u1ec7c t\u1ed5 ch\u1ee9c h\u1ecdc t\u1eadp theo h\u1ec7 th\u1ed1ng tÌn ch\u1ec9. \u0110‚y l‡ hÏnh th\u1ee9c \u0111‡o t\u1ea1o v\u1edbi quy trÏnh m\u1ec1m d\u1ebbo, l\u1ea5y ng\u01b0\u1eddi h\u1ecdc l‡m trung t‚m, ng\u01b0\u1eddi h\u1ecdc ch\u1ee7 \u0111\u1ed9ng h\u01a1n trong qu· trÏnh h\u1ecdc t\u1eadp c\u1ee7a mÏnh. Ngo‡i ra, c·c sinh viÍn c\u1ea7n n\u1eafm b\u1eaft \u0111\u01b0\u1ee3c thÙng tin v\u1ec1 c·c ho\u1ea1t \u0111\u1ed9ng \u0111‡o t\u1ea1o, rËn luy\u1ec7n c\u1ee7a Nh‡ tr\u01b0\u1eddng. VÏ v\u1eady, \u0111‚y l‡ c\u1ea9m nang h\u1ed7 tr\u1ee3 v‡ gi˙p \u0111\u1ee1 c·c b\u1ea1n trong qu· trÏnh h\u1ecdc t\u1eadp, rËn luy\u1ec7n \u1edf b\u1eadc \u0111\u1ea1i h\u1ecdc, t\u1ea1i Tr\u01b0\u1eddng \u0110HGTVT.'}, {'chunkIndex': 4, 'score': 0.722575548666292, 'text': 'K\u1ebft qu\u1ea3 h\u1ecdc t\u1eadp c\u1ee7a sinh viÍn t\u1ea1i c·c c\u01a1 s\u1edf gi·o d\u1ee5c \u0111\u1ea1i h\u1ecdc kh·c nay chuy\u1ec3n v\u1ec1 h\u1ecdc t\u1ea1i Nh‡ tr\u01b0\u1eddng;\nK\u1ebft qu\u1ea3 h\u1ecdc t\u1eadp c\u1ee7a sinh viÍn t\u1ea1i c·c c\u01a1 s\u1edf \u0111‡o t\u1ea1o kh·c theo ch\u01b0\u01a1ng trÏnh trao \u0111\u1ed5i sinh viÍn \u0111\u01b0\u1ee3c k˝ k\u1ebft.\nH\u1ed9i \u0111\u1ed3ng chuyÍn mÙn c\u1ee7a khoa xem xÈt v‡ \u0111\u1ec1 ngh\u1ecb Nh‡ tr\u01b0\u1eddng cÙng nh\u1eadn, chuy\u1ec3n \u0111\u1ed5i tÌn ch\u1ec9 trÍn c\u01a1 s\u1edf \u0111\u1ed1i s·nh chu\u1ea9n \u0111\u1ea7u ra, n\u1ed9i dung v‡ kh\u1ed1i l\u01b0\u1ee3ng h\u1ecdc t\u1eadp, c·ch th\u1ee9c \u0111·nh gi· h\u1ecdc ph\u1ea7n v‡ c·c \u0111i\u1ec1u ki\u1ec7n b\u1ea3o \u0111\u1ea3m ch\u1ea5t l\u01b0\u1ee3ng th\u1ef1c hi\u1ec7n ch\u01b0\u01a1ng trÏnh theo t\u1eebng h\u1ecdc ph\u1ea7n.'}]
+===========================
+
+2025-11-24 23:58:09,858 [INFO] 127.0.0.1 - - [24/Nov/2025 23:58:09] "POST /api/global-qna HTTP/1.1" 200 -
+2025-11-24 23:58:47,060 [INFO] 127.0.0.1 - - [24/Nov/2025 23:58:47] "OPTIONS /api/upload-file HTTP/1.1" 200 -
+2025-11-24 23:59:01,072 [INFO] INDEXED 338 chunks in 13.162s
+2025-11-24 23:59:01,072 [INFO] 127.0.0.1 - - [24/Nov/2025 23:59:01] "POST /api/upload-file HTTP/1.1" 200 -
+2025-11-24 23:59:01,199 [INFO] INDEXED 338 chunks in 13.1803s
+2025-11-24 23:59:01,201 [INFO] 127.0.0.1 - - [24/Nov/2025 23:59:01] "POST /api/upload-file HTTP/1.1" 200 -
+2025-11-24 23:59:25,065 [INFO] 127.0.0.1 - - [24/Nov/2025 23:59:25] "OPTIONS /api/global-qna HTTP/1.1" 200 -
+2025-11-24 23:59:27,701 [INFO] 
+======== RAG QUERY ========
+Question: D\u1ea1y v‡ h\u1ecdc tr\u1ef1c tuy\u1ebfn c\u1ee7a tr\u01b0\u1eddng nh\u01b0 th\u1ebf n‡o v\u1eady?
+Context Chunks: 5
+Search Time: 0.0109s
+LLM Time: 2.067s
+Total: 2.387s
+Top Chunks: [{'chunkIndex': 0, 'score': 0.7396621760701128, 'text': 'Ph·t huy vai trÚ ch\u1ee7 \u0111\u1ed9ng \u0111\u1ed3ng th\u1eddi \u0111\u1ec1 cao tr·ch nhi\u1ec7m c\u1ee7a sinh viÍn, t\u1ea1o \u0111i\u1ec1u ki\u1ec7n v‡ \u0111\u1ed9ng l\u1ef1c \u0111\u1ec3 sinh viÍn n\u1ed7 l\u1ef1c h\u1ecdc t\u1eadp; gi\u1eef v\u1eefng k\u1ef7 c\u01b0\u01a1ng h\u1ecdc \u0111\u01b0\u1eddng, n‚ng cao ch\u1ea5t l\u01b0\u1ee3ng v‡ hi\u1ec7u qu\u1ea3 \u0111‡o t\u1ea1o;\nCÛ c\u01a1 ch\u1ebf thanh tra, gi·m s·t n\u1ed9i b\u1ed9 v‡ cÛ h\u1ec7 th\u1ed1ng c\u1ea3i ti\u1ebfn ch\u1ea5t l\u01b0\u1ee3ng d\u1ef1a trÍn thu th\u1eadp, \u0111·nh gi· ˝ ki\u1ebfn ph\u1ea3n h\u1ed3i c\u1ee7a ng\u01b0\u1eddi h\u1ecdc.\nD\u1ea1y v‡ h\u1ecdc tr\u1ef1c tuy\u1ebfn:'}, {'chunkIndex': 1, 'score': 0.6955764027132398, 'text': 'D\u1ea1y v‡ h\u1ecdc tr\u1ef1c tuy\u1ebfn:\nNh‡ tr\u01b0\u1eddng t\u1ed5 ch\u1ee9c c·c l\u1edbp h\u1ecdc ph\u01b0\u01a1ng th\u1ee9c tr\u1ef1c tuy\u1ebfn ho\u1eb7c k\u1ebft h\u1ee3p tr\u1ef1c ti\u1ebfp v\u1edbi tr\u1ef1c tuy\u1ebfn khi \u0111·p \u1ee9ng c·c quy \u0111\u1ecbnh hi\u1ec7n h‡nh v\u1ec1 \u1ee9ng d\u1ee5ng cÙng ngh\u1ec7 thÙng tin trong qu\u1ea3n l˝ v‡ t\u1ed5 ch\u1ee9c \u0111‡o t\u1ea1o qua m\u1ea1ng; cÛ c·c gi\u1ea3i ph·p b\u1ea3o \u0111\u1ea3m ch\u1ea5t l\u01b0\u1ee3ng v‡ minh ch\u1ee9ng v\u1ec1 ch\u1ea5t l\u01b0\u1ee3ng t\u1ed5 ch\u1ee9c l\u1edbp h\u1ecdc ph\u01b0\u01a1ng th\u1ee9c tr\u1ef1c tuy\u1ebfn khÙng th\u1ea5p h\u01a1n ch\u1ea5t l\u01b0\u1ee3ng l\u1edbp h\u1ecdc ph\u01b0\u01a1ng th\u1ee9c tr\u1ef1c ti\u1ebfp;'}, {'chunkIndex': 2, 'score': 0.6652552809392613, 'text': 'Tr·ch nhi\u1ec7m v‡ quy\u1ec1n h\u1ea1n c\u1ee7a gi\u1ea3ng viÍn \u0111\u01b0\u1ee3c ph‚n cÙng gi\u1ea3ng d\u1ea1y c·c l\u1edbp h\u1ecdc ph\u1ea7n:\n\u0110\u01b0\u1ee3c ph‚n cÙng gi\u1ea3ng d\u1ea1y theo \u0111˙ng chuyÍn mÙn, nghi\u1ec7p v\u1ee5; \u0111\u01b0\u1ee3c quy\u1ec1n \u0111\u1ec1 ngh\u1ecb ph‚n cÙng gi\u1ea3ng viÍn d\u1ea1y thay, \u0111\u1ec1 ngh\u1ecb \u0111\u1ed5i gi\u1edd trong tr\u01b0\u1eddng h\u1ee3p b\u1ea5t kh\u1ea3 kh·ng khÙng th\u1ec3 tham gia gi\u1ea3ng d\u1ea1y \u0111\u01b0\u1ee3c;\nThÙng b·o cho sinh viÍn v\u1ec1 m\u1ee5c tiÍu, chu\u1ea9n \u0111\u1ea7u ra, n\u1ed9i dung, ph\u01b0\u01a1ng ph·p (ph\u01b0\u01a1ng th\u1ee9c), k\u1ebf ho\u1ea1ch d\u1ea1y h\u1ecdc v‡ \u0111·nh gi· k\u1ebft qu\u1ea3 h\u1ecdc t\u1eadp ngay trong bu\u1ed5i h\u1ecdc \u0111\u1ea7u tiÍn c\u1ee7a l\u1edbp h\u1ecdc ph\u1ea7n;'}, {'chunkIndex': 3, 'score': 0.6605073150568412, 'text': 'Th\u1eddi \u0111i\u1ec3m l\u1ea5y ˝ ki\u1ebfn: Sau khi \u0111·nh gi· k\u1ebft th˙c h\u1ecdc ph\u1ea7n, sau khi k\u1ebft th˙c khÛa h\u1ecdc;\nK\u1ebft qu\u1ea3 l\u1ea5y ˝ ki\u1ebfn ph\u1ea3n h\u1ed3i c\u1ee7a ng\u01b0\u1eddi h\u1ecdc, bao g\u1ed3m n\u1ed9i dung, m\u1ee9c \u0111\u1ed9, \u0111\u01b0\u1ee3c thÙng b·o t\u1edbi c·c \u0111\u01a1n v\u1ecb ch\u1ee9c n\u0103ng, tr\u01b0\u1edfng khoa, tr\u01b0\u1edfng b\u1ed9 mÙn v‡ gi\u1ea3ng viÍn.\nTr·ch nhi\u1ec7m v‡ quy\u1ec1n h\u1ea1n c\u1ee7a gi\u1ea3ng viÍn \u0111\u01b0\u1ee3c ph‚n cÙng gi\u1ea3ng d\u1ea1y c·c l\u1edbp h\u1ecdc ph\u1ea7n:'}, {'chunkIndex': 4, 'score': 0.6601545784128424, 'text': 'T˘y t\u1eebng tr\u01b0\u1eddng h\u1ee3p c\u1ee5 th\u1ec3, Th\u1ee7 tr\u01b0\u1edfng c\u01a1 s\u1edf gi·o d\u1ee5c \u0111\u1ea1i h\u1ecdc c\u0103n c\u1ee9 v‡o quy ch\u1ebf \u0111‡o t\u1ea1o \u0111\u1ec3 quy\u1ebft \u0111\u1ecbnh th\u1eddi h\u1ea1n \u0111Ïnh ch\u1ec9 h\u1ecdc t\u1eadp theo c·c m\u1ee9c: \u0111Ïnh ch\u1ec9 m\u1ed9t h\u1ecdc k\u1ef3, \u0111Ïnh ch\u1ec9 m\u1ed9t n\u0103m h\u1ecdc ho\u1eb7c \u0111Ïnh ch\u1ec9 theo th\u1eddi gian sinh viÍn b\u1ecb x\u1eed ph\u1ea1t t˘ nh\u01b0ng cho h\u01b0\u1edfng ·n treo.'}]
+===========================
+
+2025-11-24 23:59:27,702 [INFO] 127.0.0.1 - - [24/Nov/2025 23:59:27] "POST /api/global-qna HTTP/1.1" 200 -
+2025-11-25 00:49:53,500 [INFO] 127.0.0.1 - - [25/Nov/2025 00:49:53] "OPTIONS /api/upload-file HTTP/1.1" 200 -
+2025-11-25 00:49:53,580 [INFO] 127.0.0.1 - - [25/Nov/2025 00:49:53] "OPTIONS /api/upload-file HTTP/1.1" 200 -
+2025-11-25 00:49:59,833 [INFO] 127.0.0.1 - - [25/Nov/2025 00:49:59] "OPTIONS /api/upload-file HTTP/1.1" 200 -
+2025-11-25 00:50:06,795 [INFO] 127.0.0.1 - - [25/Nov/2025 00:50:06] "OPTIONS /api/upload-file HTTP/1.1" 200 -
+2025-11-25 00:50:17,155 [INFO] 127.0.0.1 - - [25/Nov/2025 00:50:17] "OPTIONS /api/upload-file HTTP/1.1" 200 -
+2025-11-25 00:51:06,404 [INFO] Use pytorch device_name: cpu
+2025-11-25 00:51:06,405 [INFO] Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-11-25 00:51:22,042 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:3001
+ * Running on http://192.168.1.8:3001
+2025-11-25 00:51:22,042 [INFO] [33mPress CTRL+C to quit[0m
+2025-11-25 00:51:22,053 [INFO]  * Restarting with watchdog (windowsapi)
+2025-11-25 00:51:32,701 [INFO] Use pytorch device_name: cpu
+2025-11-25 00:51:32,701 [INFO] Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-11-25 00:51:36,630 [WARNING]  * Debugger is active!
+2025-11-25 00:51:36,635 [INFO]  * Debugger PIN: 131-009-956
+2025-11-25 00:52:13,210 [INFO]  * Detected change in 'E:\\tai lieu\\hoc ki 9\\CÙng ngh\u1ec7 doanh nghi\u1ec7p\\word_ui\\NLPSearch\\server\\main.py', reloading
+2025-11-25 00:52:13,210 [INFO]  * Detected change in 'E:\\tai lieu\\hoc ki 9\\CÙng ngh\u1ec7 doanh nghi\u1ec7p\\word_ui\\NLPSearch\\server\\main.py', reloading
+2025-11-25 00:52:17,034 [INFO]  * Restarting with watchdog (windowsapi)
+2025-11-25 00:52:44,065 [INFO] Use pytorch device_name: cpu
+2025-11-25 00:52:44,065 [INFO] Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-11-25 00:52:59,142 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:3001
+ * Running on http://192.168.1.8:3001
+2025-11-25 00:52:59,142 [INFO] [33mPress CTRL+C to quit[0m
+2025-11-25 00:52:59,151 [INFO]  * Restarting with watchdog (windowsapi)
+2025-11-25 00:53:10,489 [INFO] Use pytorch device_name: cpu
+2025-11-25 00:53:10,490 [INFO] Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-11-25 00:53:14,299 [WARNING]  * Debugger is active!
+2025-11-25 00:53:14,302 [INFO]  * Debugger PIN: 131-009-956
+2025-11-25 01:00:40,214 [INFO]  * Detected change in 'E:\\tai lieu\\hoc ki 9\\C√¥ng ngh·ªá doanh nghi·ªáp\\word_ui\\NLPSearch\\server\\main.py', reloading
+2025-11-25 01:00:40,215 [INFO]  * Detected change in 'E:\\tai lieu\\hoc ki 9\\C√¥ng ngh·ªá doanh nghi·ªáp\\word_ui\\NLPSearch\\server\\main.py', reloading
+2025-11-25 01:00:40,216 [INFO]  * Detected change in 'E:\\tai lieu\\hoc ki 9\\C√¥ng ngh·ªá doanh nghi·ªáp\\word_ui\\NLPSearch\\server\\main.py', reloading
+2025-11-25 01:00:43,614 [INFO]  * Restarting with watchdog (windowsapi)
+2025-11-25 01:00:54,675 [INFO] Use pytorch device_name: cpu
+2025-11-25 01:00:54,675 [INFO] Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-11-25 01:00:58,446 [WARNING]  * Debugger is active!
+2025-11-25 01:00:58,449 [INFO]  * Debugger PIN: 131-009-956
+2025-11-25 01:02:30,872 [INFO]  * Detected change in 'E:\\tai lieu\\hoc ki 9\\C√¥ng ngh·ªá doanh nghi·ªáp\\word_ui\\NLPSearch\\server\\main.py', reloading
+2025-11-25 01:02:30,872 [INFO]  * Detected change in 'E:\\tai lieu\\hoc ki 9\\C√¥ng ngh·ªá doanh nghi·ªáp\\word_ui\\NLPSearch\\server\\main.py', reloading
+2025-11-25 01:02:30,873 [INFO]  * Detected change in 'E:\\tai lieu\\hoc ki 9\\C√¥ng ngh·ªá doanh nghi·ªáp\\word_ui\\NLPSearch\\server\\main.py', reloading
+2025-11-25 01:02:34,229 [INFO]  * Restarting with watchdog (windowsapi)
+2025-11-25 01:02:45,595 [INFO] Use pytorch device_name: cpu
+2025-11-25 01:02:45,595 [INFO] Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-11-25 01:02:49,413 [WARNING]  * Debugger is active!
+2025-11-25 01:02:49,416 [INFO]  * Debugger PIN: 131-009-956
+2025-11-25 01:02:59,866 [INFO]  * Detected change in 'E:\\tai lieu\\hoc ki 9\\C√¥ng ngh·ªá doanh nghi·ªáp\\word_ui\\NLPSearch\\server\\main.py', reloading
+2025-11-25 01:02:59,867 [INFO]  * Detected change in 'E:\\tai lieu\\hoc ki 9\\C√¥ng ngh·ªá doanh nghi·ªáp\\word_ui\\NLPSearch\\server\\main.py', reloading
+2025-11-25 01:03:03,802 [INFO]  * Restarting with watchdog (windowsapi)
+2025-11-25 01:03:15,708 [INFO] Use pytorch device_name: cpu
+2025-11-25 01:03:15,709 [INFO] Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-11-25 01:03:19,588 [WARNING]  * Debugger is active!
+2025-11-25 01:03:19,591 [INFO]  * Debugger PIN: 131-009-956
+2025-11-25 01:03:46,126 [INFO]  * Detected change in 'E:\\tai lieu\\hoc ki 9\\C√¥ng ngh·ªá doanh nghi·ªáp\\word_ui\\NLPSearch\\server\\main.py', reloading
+2025-11-25 01:03:46,126 [INFO]  * Detected change in 'E:\\tai lieu\\hoc ki 9\\C√¥ng ngh·ªá doanh nghi·ªáp\\word_ui\\NLPSearch\\server\\main.py', reloading
+2025-11-25 01:03:46,127 [INFO]  * Detected change in 'E:\\tai lieu\\hoc ki 9\\C√¥ng ngh·ªá doanh nghi·ªáp\\word_ui\\NLPSearch\\server\\main.py', reloading
+2025-11-25 01:03:49,886 [INFO]  * Restarting with watchdog (windowsapi)
+2025-11-25 01:04:01,352 [INFO] Use pytorch device_name: cpu
+2025-11-25 01:04:01,352 [INFO] Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-11-25 01:04:05,288 [WARNING]  * Debugger is active!
+2025-11-25 01:04:05,292 [INFO]  * Debugger PIN: 131-009-956
+2025-11-25 01:04:05,901 [INFO]  * Detected change in 'E:\\tai lieu\\hoc ki 9\\C√¥ng ngh·ªá doanh nghi·ªáp\\word_ui\\NLPSearch\\server\\main.py', reloading
+2025-11-25 01:04:05,902 [INFO]  * Detected change in 'E:\\tai lieu\\hoc ki 9\\C√¥ng ngh·ªá doanh nghi·ªáp\\word_ui\\NLPSearch\\server\\main.py', reloading
+2025-11-25 01:04:05,902 [INFO]  * Detected change in 'E:\\tai lieu\\hoc ki 9\\C√¥ng ngh·ªá doanh nghi·ªáp\\word_ui\\NLPSearch\\server\\main.py', reloading
+2025-11-25 01:04:09,557 [INFO]  * Restarting with watchdog (windowsapi)
+2025-11-25 01:04:20,892 [INFO] Use pytorch device_name: cpu
+2025-11-25 01:04:20,892 [INFO] Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-11-25 01:04:24,994 [WARNING]  * Debugger is active!
+2025-11-25 01:04:24,998 [INFO]  * Debugger PIN: 131-009-956
+2025-11-25 01:04:31,221 [INFO]  * Detected change in 'E:\\tai lieu\\hoc ki 9\\C√¥ng ngh·ªá doanh nghi·ªáp\\word_ui\\NLPSearch\\server\\main.py', reloading
+2025-11-25 01:04:31,221 [INFO]  * Detected change in 'E:\\tai lieu\\hoc ki 9\\C√¥ng ngh·ªá doanh nghi·ªáp\\word_ui\\NLPSearch\\server\\main.py', reloading
+2025-11-25 01:04:35,240 [INFO]  * Restarting with watchdog (windowsapi)
+2025-11-25 01:04:45,887 [INFO] Use pytorch device_name: cpu
+2025-11-25 01:04:45,888 [INFO] Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-11-25 01:04:49,734 [WARNING]  * Debugger is active!
+2025-11-25 01:04:49,737 [INFO]  * Debugger PIN: 131-009-956
+2025-11-25 01:05:29,309 [INFO] 127.0.0.1 - - [25/Nov/2025 01:05:29] "OPTIONS /api/upload-file HTTP/1.1" 200 -
+2025-11-25 01:05:29,419 [INFO] 127.0.0.1 - - [25/Nov/2025 01:05:29] "OPTIONS /api/upload-file HTTP/1.1" 200 -
+2025-11-25 01:05:38,005 [INFO] Loading faiss with AVX512 support.
+2025-11-25 01:05:38,005 [INFO] Could not load library with AVX512 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx512'")
+2025-11-25 01:05:38,005 [INFO] Loading faiss with AVX2 support.
+2025-11-25 01:05:38,034 [INFO] Successfully loaded faiss with AVX2 support.
+2025-11-25 01:05:38,069 [INFO] Indexed 185 chunks in 8.4974s
+2025-11-25 01:05:38,069 [INFO] Indexed 185 chunks in 8.449s
+2025-11-25 01:05:38,069 [INFO] 127.0.0.1 - - [25/Nov/2025 01:05:38] "POST /api/upload-file HTTP/1.1" 200 -
+2025-11-25 01:05:38,070 [INFO] 127.0.0.1 - - [25/Nov/2025 01:05:38] "POST /api/upload-file HTTP/1.1" 200 -
+2025-11-25 01:06:22,492 [INFO] 127.0.0.1 - - [25/Nov/2025 01:06:22] "OPTIONS /api/global-qna HTTP/1.1" 200 -
+2025-11-25 01:06:27,564 [INFO] Q: C√°c k√™nh th√¥ng tin online h·ªó tr·ª£ sinh vi√™n? | Top Chunks: 5 | LLM: 4.2905s | Total: 4.7634s
+2025-11-25 01:06:27,565 [INFO] 127.0.0.1 - - [25/Nov/2025 01:06:27] "POST /api/global-qna HTTP/1.1" 200 -
+2025-11-25 01:07:24,914 [INFO] 127.0.0.1 - - [25/Nov/2025 01:07:24] "OPTIONS /api/global-qna HTTP/1.1" 200 -
+2025-11-25 01:07:32,392 [INFO] Q: Ch∆∞∆°ng tr√¨nh ƒë√†o t·∫°o v√† th·ªùi gian h·ªçc t·∫≠p? | Top Chunks: 5 | LLM: 6.802s | Total: 7.2171s
+2025-11-25 01:07:32,392 [INFO] 127.0.0.1 - - [25/Nov/2025 01:07:32] "POST /api/global-qna HTTP/1.1" 200 -
+2025-11-25 01:13:45,424 [INFO]  * Detected change in 'E:\\tai lieu\\hoc ki 9\\C√¥ng ngh·ªá doanh nghi·ªáp\\word_ui\\NLPSearch\\server\\main.py', reloading
+2025-11-25 01:13:45,425 [INFO]  * Detected change in 'E:\\tai lieu\\hoc ki 9\\C√¥ng ngh·ªá doanh nghi·ªáp\\word_ui\\NLPSearch\\server\\main.py', reloading
+2025-11-25 01:13:45,425 [INFO]  * Detected change in 'E:\\tai lieu\\hoc ki 9\\C√¥ng ngh·ªá doanh nghi·ªáp\\word_ui\\NLPSearch\\server\\main.py', reloading
+2025-11-25 01:39:05,389 [INFO] Use pytorch device_name: cpu
+2025-11-25 01:39:05,390 [INFO] Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-11-25 01:39:09,655 [INFO] Loading faiss with AVX512 support.
+2025-11-25 01:39:09,656 [INFO] Could not load library with AVX512 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx512'")
+2025-11-25 01:39:09,656 [INFO] Loading faiss with AVX2 support.
+2025-11-25 01:39:09,677 [INFO] Successfully loaded faiss with AVX2 support.
+2025-11-25 01:39:09,686 [ERROR] Failed to load FAISS: Error in __cdecl faiss::FileIOReader::FileIOReader(const char *) at D:\a\faiss-wheels\faiss-wheels\third-party\faiss\faiss\impl\io.cpp:70: Error: 'f' failed: could not open faiss_index\index.faiss for reading: No such file or directory
+2025-11-25 01:39:09,695 [WARNING]  * Debugger is active!
+2025-11-25 01:39:09,698 [INFO]  * Debugger PIN: 131-009-956
+2025-11-25 01:39:09,730 [INFO] 127.0.0.1 - - [25/Nov/2025 01:39:09] "OPTIONS /api/upload-file HTTP/1.1" 200 -
+2025-11-25 01:39:09,731 [INFO] 127.0.0.1 - - [25/Nov/2025 01:39:09] "OPTIONS /api/upload-file HTTP/1.1" 200 -
+2025-11-25 01:39:09,744 [ERROR] Failed to load FAISS: Error in __cdecl faiss::FileIOReader::FileIOReader(const char *) at D:\a\faiss-wheels\faiss-wheels\third-party\faiss\faiss\impl\io.cpp:70: Error: 'f' failed: could not open faiss_index\index.faiss for reading: No such file or directory
+2025-11-25 01:39:09,757 [INFO] Splitting into 185 chunks...
+2025-11-25 01:39:09,758 [ERROR] Failed to load FAISS: Error in __cdecl faiss::FileIOReader::FileIOReader(const char *) at D:\a\faiss-wheels\faiss-wheels\third-party\faiss\faiss\impl\io.cpp:70: Error: 'f' failed: could not open faiss_index\index.faiss for reading: No such file or directory
+2025-11-25 01:39:10,046 [ERROR] Failed to load FAISS: Error in __cdecl faiss::FileIOReader::FileIOReader(const char *) at D:\a\faiss-wheels\faiss-wheels\third-party\faiss\faiss\impl\io.cpp:70: Error: 'f' failed: could not open faiss_index\index.faiss for reading: No such file or directory
+2025-11-25 01:39:10,064 [INFO] Splitting into 185 chunks...
+2025-11-25 01:39:10,065 [ERROR] Failed to load FAISS: Error in __cdecl faiss::FileIOReader::FileIOReader(const char *) at D:\a\faiss-wheels\faiss-wheels\third-party\faiss\faiss\impl\io.cpp:70: Error: 'f' failed: could not open faiss_index\index.faiss for reading: No such file or directory
+2025-11-25 01:39:18,637 [INFO] Created new FAISS index from scratch
+2025-11-25 01:39:18,651 [INFO] Indexed 185 chunks in 8.9112s
+2025-11-25 01:39:18,652 [INFO] 127.0.0.1 - - [25/Nov/2025 01:39:18] "POST /api/upload-file HTTP/1.1" 200 -
+2025-11-25 01:39:19,063 [INFO] Created new FAISS index from scratch
+2025-11-25 01:39:19,072 [INFO] Indexed 185 chunks in 9.0312s
+2025-11-25 01:39:19,073 [INFO] 127.0.0.1 - - [25/Nov/2025 01:39:19] "POST /api/upload-file HTTP/1.1" 200 -
+2025-11-25 01:39:57,005 [INFO] 127.0.0.1 - - [25/Nov/2025 01:39:57] "OPTIONS /api/global-qna HTTP/1.1" 200 -
+2025-11-25 01:40:02,399 [INFO] Q: C√°c k√™nh online h·ªó tr·ª£/ | Top Chunks: 5 | LLM: 4.6542s | Total: 5.1266s
+2025-11-25 01:40:02,399 [INFO] 127.0.0.1 - - [25/Nov/2025 01:40:02] "POST /api/global-qna HTTP/1.1" 200 -
+2025-11-25 01:41:22,043 [INFO] 127.0.0.1 - - [25/Nov/2025 01:41:22] "OPTIONS /api/upload-file HTTP/1.1" 200 -
+2025-11-25 01:41:22,117 [INFO] 127.0.0.1 - - [25/Nov/2025 01:41:22] "OPTIONS /api/upload-file HTTP/1.1" 200 -
+2025-11-25 01:41:22,296 [INFO] Loaded FAISS index from disk
+2025-11-25 01:41:22,296 [INFO] File unchanged, skipping re-indexing.
+2025-11-25 01:41:22,301 [INFO] 127.0.0.1 - - [25/Nov/2025 01:41:22] "[35m[1mPOST /api/upload-file HTTP/1.1[0m" 500 -
+2025-11-25 01:41:22,356 [INFO] Loaded FAISS index from disk
+2025-11-25 01:41:22,356 [INFO] File unchanged, skipping re-indexing.
+2025-11-25 01:41:22,361 [INFO] 127.0.0.1 - - [25/Nov/2025 01:41:22] "[35m[1mPOST /api/upload-file HTTP/1.1[0m" 500 -
+2025-11-25 01:41:28,223 [INFO] 127.0.0.1 - - [25/Nov/2025 01:41:28] "OPTIONS /api/upload-file HTTP/1.1" 200 -
+2025-11-25 01:41:28,547 [INFO] Loaded FAISS index from disk
+2025-11-25 01:41:28,548 [INFO] File unchanged, skipping re-indexing.
+2025-11-25 01:41:28,552 [INFO] 127.0.0.1 - - [25/Nov/2025 01:41:28] "[35m[1mPOST /api/upload-file HTTP/1.1[0m" 500 -
+2025-11-25 01:41:28,597 [INFO] Loaded FAISS index from disk
+2025-11-25 01:41:28,597 [INFO] File unchanged, skipping re-indexing.
+2025-11-25 01:41:28,602 [INFO] 127.0.0.1 - - [25/Nov/2025 01:41:28] "[35m[1mPOST /api/upload-file HTTP/1.1[0m" 500 -
+2025-11-25 01:41:30,608 [INFO] Loaded FAISS index from disk
+2025-11-25 01:41:30,608 [INFO] File unchanged, skipping re-indexing.
+2025-11-25 01:41:30,612 [INFO] 127.0.0.1 - - [25/Nov/2025 01:41:30] "[35m[1mPOST /api/upload-file HTTP/1.1[0m" 500 -
+2025-11-25 01:41:30,996 [INFO] Loaded FAISS index from disk
+2025-11-25 01:41:30,996 [INFO] File unchanged, skipping re-indexing.
+2025-11-25 01:41:31,000 [INFO] 127.0.0.1 - - [25/Nov/2025 01:41:31] "[35m[1mPOST /api/upload-file HTTP/1.1[0m" 500 -
+2025-11-25 01:45:13,074 [INFO] Use pytorch device_name: cpu
+2025-11-25 01:45:13,074 [INFO] Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-11-25 01:45:16,853 [INFO] Loading faiss with AVX512 support.
+2025-11-25 01:45:16,854 [INFO] Could not load library with AVX512 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx512'")
+2025-11-25 01:45:16,854 [INFO] Loading faiss with AVX2 support.
+2025-11-25 01:45:16,872 [INFO] Successfully loaded faiss with AVX2 support.
+2025-11-25 01:45:16,881 [INFO] Loaded FAISS index from disk
+2025-11-25 01:45:28,781 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:3001
+ * Running on http://192.168.1.8:3001
+2025-11-25 01:45:28,782 [INFO] [33mPress CTRL+C to quit[0m
+2025-11-25 01:45:28,793 [INFO]  * Restarting with watchdog (windowsapi)
+2025-11-25 01:45:39,917 [INFO] Use pytorch device_name: cpu
+2025-11-25 01:45:39,917 [INFO] Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-11-25 01:45:43,950 [INFO] Loading faiss with AVX512 support.
+2025-11-25 01:45:43,950 [INFO] Could not load library with AVX512 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx512'")
+2025-11-25 01:45:43,950 [INFO] Loading faiss with AVX2 support.
+2025-11-25 01:45:43,976 [INFO] Successfully loaded faiss with AVX2 support.
+2025-11-25 01:45:43,989 [INFO] Loaded FAISS index from disk
+2025-11-25 01:45:43,997 [WARNING]  * Debugger is active!
+2025-11-25 01:45:44,003 [INFO]  * Debugger PIN: 131-009-956
+2025-11-25 01:45:44,034 [INFO] 127.0.0.1 - - [25/Nov/2025 01:45:44] "OPTIONS /api/upload-file HTTP/1.1" 200 -
+2025-11-25 01:45:44,040 [INFO] 127.0.0.1 - - [25/Nov/2025 01:45:44] "OPTIONS /api/upload-file HTTP/1.1" 200 -
+2025-11-25 01:45:44,052 [INFO] Loaded FAISS index from disk
+2025-11-25 01:45:44,052 [INFO] File unchanged, skipping re-indexing.
+2025-11-25 01:45:44,060 [INFO] 127.0.0.1 - - [25/Nov/2025 01:45:44] "[35m[1mPOST /api/upload-file HTTP/1.1[0m" 500 -
+2025-11-25 01:45:44,370 [INFO] Loaded FAISS index from disk
+2025-11-25 01:45:44,370 [INFO] File unchanged, skipping re-indexing.
+2025-11-25 01:45:44,373 [INFO] 127.0.0.1 - - [25/Nov/2025 01:45:44] "[35m[1mPOST /api/upload-file HTTP/1.1[0m" 500 -
+2025-11-25 01:46:17,883 [INFO]  * Detected change in 'E:\\tai lieu\\hoc ki 9\\C√¥ng ngh·ªá doanh nghi·ªáp\\word_ui\\NLPSearch\\server\\main.py', reloading
+2025-11-25 01:46:17,883 [INFO]  * Detected change in 'E:\\tai lieu\\hoc ki 9\\C√¥ng ngh·ªá doanh nghi·ªáp\\word_ui\\NLPSearch\\server\\main.py', reloading

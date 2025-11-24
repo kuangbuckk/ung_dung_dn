@@ -1,51 +1,38 @@
 <!DOCTYPE html>
-<html>
+<html lang="vi">
 <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
-    <title>Gemini Word Helper (File Search RAG)</title>
-    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <title>Gemini Word Chat</title>
     <script src="https://appsforoffice.microsoft.com/lib/1/hosted/office.js" type="text/javascript"></script>
-
     <link rel="stylesheet" href="taskpane.css">
 </head>
 <body>
-    <div class="container">
-        
-        <p id="status">Đang khởi tạo...</p>
-        
-        <div id="loading-spinner" class="d-none">
-            <div class="spinner"></div> Đang tải Gemini...
-        </div>
-        
-        <hr>
+<div class="container">
 
-        <h3>💾 Upload File (Chuẩn bị RAG)</h3>
-        <p>Hệ thống tự động **Upload** toàn bộ tài liệu lên **Gemini File Store** khi mở Add-in. Nhấn nút này để upload lại nếu bạn chỉnh sửa nội dung.</p>
-        <button id="index-button">Upload Tài liệu Lên File Store</button>
-        
-        <hr>
+    <div id="status" class="status">Khởi tạo...</div>
 
-        <h3>❓ Global Q&A (Toàn Tài liệu)</h3>
-        <p>Đặt câu hỏi về nội dung toàn bộ tài liệu đã upload. Cần Upload thành công trước.</p>
-        <input type="text" id="qna-input" placeholder="Nhập câu hỏi của bạn..." style="width: 100%;" />
-        <button id="qna-button">Trả lời Câu hỏi (Toàn Tài liệu)</button>
-        
-        <hr>
-
-        <h3>💡 Giải thích Thuật ngữ</h3>
-        <p>Chọn một từ/cụm từ (thuật ngữ) trong Word để giải thích và nghiên cứu thêm (sử dụng Google Search Tool).</p>
-        <button id="explain-button">Giải thích Thuật ngữ (Kèm Nghiên Cứu)</button>
-
-        <hr>
-        
-        <h3>Kết quả AI</h3>
-        <div id="results-content">
-            <p style="color: #605e5c;">(Kết quả từ Q&A hoặc Giải thích sẽ hiển thị ở đây)</p>
-        </div>
-
+    <div id="upload-progress-container" class="spinner-container d-none">
+        <div id="upload-progress-bar" class="spinner-bar"></div>
+        <span id="upload-progress-text"></span>
     </div>
-    
-    <script src="taskpane.js" type="text/javascript"></script>
+
+    <section class="panel">
+        <h3>Upload Tài liệu</h3>
+        <p>Hệ thống tự động upload toàn bộ tài liệu khi mở Add-in. Nhấn nút để upload lại.</p>
+        <button id="index-button">Upload Tài liệu</button>
+    </section>
+
+    <section class="panel chat-panel">
+        <div id="chat-container"></div>
+        <div id="chat-input-container">
+            <textarea id="chat-input" placeholder="Nhập câu hỏi..." rows="2"></textarea>
+            <button id="chat-send-btn">Gửi</button>
+        </div>
+    </section>
+
+</div>
+
+<script src="taskpane.js" type="text/javascript"></script>
 </body>
 </html>
